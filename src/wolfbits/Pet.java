@@ -6,7 +6,7 @@ public class Pet {
 
     //los atributos  los inicializé vacios por si faltan datos
     private List<Race> races;
-    private Race race = “ “;
+    private Race race;
     private List<String> Colour;
     private String type = " "; //tipo, si es perro o gato
     private String name = " "; // nombre

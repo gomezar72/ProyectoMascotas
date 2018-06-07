@@ -80,7 +80,6 @@ public class Post {
         this.comments = comments;
     }
 
-    
     public Pet getPet() {
         return this.pet;
     }
@@ -88,19 +87,23 @@ public class Post {
     public void setPet(Pet pet) {
         this.pet = pet;
     }
-    
 
-    public void editPost() {
-
-    }
-
-    public void updateEndDate() {
+    public void createPost(Post post) {
 
     }
 
-    public void reviewPost() {
+    public void editPost(Post post) {
 
     }
+
+    public void updatePost(Post post) {
+
+    }
+
+    public void previewPost(Post post) {
+
+    }
+
 }
 //constructor: Mandatorios: mascota;user;startDate , type, accuser,comments
 //constructor: todos
