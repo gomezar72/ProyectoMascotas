@@ -1,8 +1,7 @@
-
 package wolfbits;
 
-
 public class User {
+
     private String name;
     private String surname;
     private String nickname;// el nickname se usar para el login 
@@ -12,12 +11,11 @@ public class User {
     private int petCapacity;///
     private int userType;
     private Address address;
-    
-    
+
     public User() {
     }
 
-    public User(String alias, String email, String phone, int capacidadMascotas){
+    public User(String alias, String email, String phone, int capacidadMascotas) {
         this.nickname = alias;
         this.email = email;
         this.phone = phone;
@@ -96,10 +94,9 @@ public class User {
     public void setAddress(Address address) {
         this.address = address;
     }
-            
-    
-    public void asignarRoles(){
-    
+
+    public void asignarRoles() {
+
     }
-   
+
 }

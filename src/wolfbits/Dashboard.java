@@ -1,22 +1,21 @@
-
 package wolfbits;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class Dashboard {
-   
-    private List <Pet> puppet;
-    private List <Post> post;
-    private List <User> users;
-  
+
+    private List<Pet> puppet;
+    private List<Post> post;
+    private List<User> users;
+
     private UserManager userManager;
     private PostManager postManager;
     private PuppetManager puppetManager;
+
     //login 
     public Dashboard(UserManager userManager, PostManager postManager, PuppetManager puppetManager) {
-        this.puppet =new ArrayList();
+        this.puppet = new ArrayList();
         this.post = new ArrayList();
         this.users = new ArrayList();
         this.userManager = userManager;
@@ -71,6 +70,5 @@ public class Dashboard {
     public void setPuppetManager(PuppetManager puppetManager) {
         this.puppetManager = puppetManager;
     }
-    
-     
+
 }
