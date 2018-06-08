@@ -15,11 +15,11 @@ public class User {
     public User() {
     }
 
-    public User(String alias, String email, String phone, int capacidadMascotas) {
+    public User(String alias, String email, String phone, int petCapacity) {
         this.nickname = alias;
         this.email = email;
         this.phone = phone;
-        this.capacidadMascotas = capacidadMascotas;
+        this.petCapacity = petCapacity;
         this.userType = 0;
     }
 
@@ -39,14 +39,22 @@ public class User {
         this.surname = surname;
     }
 
-    public String getAlias() {
-        return this.alias;
+    public String getNickname() {
+        return nickname;
     }
 
-    public void setAlias(String alias) {
-        this.alias = alias;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 
+    public int getPetCapacity() {
+        return petCapacity;
+    }
+
+    public void setPetCapacity(int petCapacity) {
+        this.petCapacity = petCapacity;
+    }
+    
     public String getEmail() {
         return this.email;
     }
@@ -69,14 +77,6 @@ public class User {
 
     public void setPhone(String phone) {
         this.phone = phone;
-    }
-
-    public int getCapacidadMascotas() {
-        return this.capacidadMascotas;
-    }
-
-    public void setCapacidadMascotas(int capacidadMascotas) {
-        this.capacidadMascotas = capacidadMascotas;
     }
 
     public int getUserType() {

@@ -1,3 +1,4 @@
+package wolfbits;
 
 public class Mail {
 

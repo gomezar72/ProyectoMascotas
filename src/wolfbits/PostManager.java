@@ -5,12 +5,8 @@ import java.util.List;
 
 public class PostManager {
 
-    public List findPet(Pet m) {//filtrar  y macheo 
+    public void findPet(Pet m) {//filtrar  y macheo 
         
-    }
-
-    public void post(Post p, Pet pt, Type t) {
-
     }
 
     public void reportPost(Post p) { //denuncias 
@@ -41,10 +37,10 @@ public class PostManager {
         
     }
 
-    public void createPost(Pet pet, User user, Date startDate, Date endDate, String status, String type) {
+    public void createPost(Pet pet, User user, Date startDate, Date endDate, String status, String type) {//ordenar, filtrar,
 
-        Post p = new Post(pet, user, startDate, endDate, status, type);
+       // Post p = new Post(pet, user, startDate, endDate, status, type);
     }
-    //ordenar, filtrar, 
+     
 
 }
