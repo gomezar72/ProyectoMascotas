@@ -1,5 +1,5 @@
 
-package wolfbits;
+package wolfbits.user;
 
 public class UserManager {
     

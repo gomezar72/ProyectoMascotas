@@ -1,7 +1,9 @@
-package wolfbits;
+package wolfbits.post;
 
+import wolfbits.pet.Pet;
 import java.util.Date;
 import java.util.List;
+import wolfbits.user.User;
 
 public class PostManager {
 

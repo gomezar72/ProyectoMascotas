@@ -1,8 +1,9 @@
-package wolfbits;
+package wolfbits.logins;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import wolfbits.user.Mail;
 
 public class LogInManager {
 

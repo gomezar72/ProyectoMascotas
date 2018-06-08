@@ -1,4 +1,6 @@
-package wolfbits;
+package wolfbits.logins;
+
+import wolfbits.user.User;
 
 public class Login {
 

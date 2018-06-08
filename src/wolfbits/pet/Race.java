@@ -1,5 +1,5 @@
 
-package wolfbits;
+package wolfbits.pet;
 
 import java.io.File;
 

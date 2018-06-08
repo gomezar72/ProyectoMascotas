@@ -1,7 +1,13 @@
-package wolfbits;
+package wolfbits.main;
 
+import wolfbits.pet.Pet;
+import wolfbits.pet.PetManager;
 import java.util.ArrayList;
 import java.util.List;
+import wolfbits.post.Post;
+import wolfbits.post.PostManager;
+import wolfbits.user.User;
+import wolfbits.user.UserManager;
 
 public class Dashboard {
 
@@ -11,10 +17,10 @@ public class Dashboard {
 
     private UserManager userManager;
     private PostManager postManager;
-    private PuppetManager puppetManager;
+    private PetManager puppetManager;
 
     //login 
-    public Dashboard(UserManager userManager, PostManager postManager, PuppetManager puppetManager) {
+    public Dashboard(UserManager userManager, PostManager postManager, PetManager puppetManager) {
         this.puppet = new ArrayList();
         this.post = new ArrayList();
         this.users = new ArrayList();
@@ -63,11 +69,11 @@ public class Dashboard {
         this.postManager = postManager;
     }
 
-    public PuppetManager getPuppetManager() {
+    public PetManager getPuppetManager() {
         return puppetManager;
     }
 
-    public void setPuppetManager(PuppetManager puppetManager) {
+    public void setPuppetManager(PetManager puppetManager) {
         this.puppetManager = puppetManager;
     }
 

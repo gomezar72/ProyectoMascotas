@@ -1,7 +1,7 @@
 
-package wolfbits;
+package wolfbits.pet;
 
-public class PuppetManager {
+public class PetManager {
     public void editPuppet(Pet puppet){
         
     }

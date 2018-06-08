@@ -1,7 +1,8 @@
-package wolfbits;
+package wolfbits.pet;
 
 import java.util.ArrayList;
 import java.util.List;
+import wolfbits.user.User;
 
 public class Pet {
 

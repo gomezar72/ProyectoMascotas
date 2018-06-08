@@ -1,6 +1,7 @@
 
-package wolfbits;
+package wolfbits.post;
 
+import wolfbits.user.User;
 import java.util.Date;
 
 

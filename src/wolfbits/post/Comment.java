@@ -1,5 +1,6 @@
-package wolfbits;
+package wolfbits.post;
 
+import wolfbits.user.User;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
