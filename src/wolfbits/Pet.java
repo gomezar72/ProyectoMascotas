@@ -1,3 +1,4 @@
+package wolfbits;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +26,7 @@ public class Pet {
 
     }
 
-    public Pet(String description, String eyeColour, String sex, String hairType, String colour, User keeper, String type, String name, String size, String age, String race, String localization, User owner) {
+    public Pet(String description, String eyeColour, String sex, String hairType, String colour, User keeper, String type, String name, String size, String age, Race race, String localization, User owner) {
         this.description = description;
         this.eyeColour = eyeColour;
         this.sex = sex;

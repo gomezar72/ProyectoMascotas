@@ -5,8 +5,8 @@ import java.util.List;
 
 public class PostManager {
 
-    public List findPet(Pet m) {
-        //filtrar  y macheo 
+    public List findPet(Pet m) {//filtrar  y macheo 
+        
     }
 
     public void post(Post p, Pet pt, Type t) {
@@ -17,28 +17,28 @@ public class PostManager {
 
     }
 
-    public void deletePost(Post p) {
+    public void deletePost(Post p) { //borrar post
 
     }
 
-    public void changeOwner(Post p, User u) {
-        //cambio de tenendosr 
+    public void changeOwner(Post p, User u) {//cambio de tenendor 
+        
     }
 
-    public void commentPost(Post p, User u, Comment c) {//comentar
+    public void commentPost(Post p, User u, Comment c) {//comentar post
 
     }
     
-     public void editPost(Post post) {
+     public void editPost(Post post) {//editar port
 
     }
 
-    public void updatePost(Post post) {
+    public void updatePost(Post post) {//actualizar post
 
     }
 
-    public void previewPost(Post post) {
-
+    public void previewPost(Post post) {// vista previa post
+        
     }
 
     public void createPost(Pet pet, User user, Date startDate, Date endDate, String status, String type) {
