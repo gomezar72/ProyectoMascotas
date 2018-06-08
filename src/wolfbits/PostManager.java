@@ -25,7 +25,19 @@ public class PostManager {
         //cambio de tenendosr 
     }
 
-    public void commentPost(Post p, User u, Comment c) {
+    public void commentPost(Post p, User u, Comment c) {//comentar
+
+    }
+    
+     public void editPost(Post post) {
+
+    }
+
+    public void updatePost(Post post) {
+
+    }
+
+    public void previewPost(Post post) {
 
     }
 

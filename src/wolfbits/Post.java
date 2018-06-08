@@ -88,22 +88,6 @@ public class Post {
         this.pet = pet;
     }
 
-    public void createPost(Post post) {
-
-    }
-
-    public void editPost(Post post) {
-
-    }
-
-    public void updatePost(Post post) {
-
-    }
-
-    public void previewPost(Post post) {
-
-    }
-
 }
 //constructor: Mandatorios: mascota;user;startDate , type, accuser,comments
 //constructor: todos
