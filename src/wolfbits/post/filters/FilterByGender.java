@@ -3,10 +3,10 @@ package wolfbits.post.filters;
 
 import wolfbits.pet.Pet;
 
-public class FilterBySex extends AbstractFilter{
+public class FilterByGender extends AbstractFilter{
     private String sex;
     
-    public FilterBySex(String sex)
+    public FilterByGender(String sex)
     {
         this.sex = sex;
     }
