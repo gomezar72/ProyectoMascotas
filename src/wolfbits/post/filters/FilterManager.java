@@ -11,28 +11,34 @@ public class FilterManager {
        List <Pet> filterByTypeResults;
        List <Pet> orFilterResults;
        List <Pet> andFilterResults;
-       private FilterByRace1 filterByRace;
-       private FilterByColour1 filterByColour;
+       private FilterByRace1 filterByRace1;
+       private FilterByRace2 filterByRace2;
+       private FilterByColour1 filterByColour1;
+       private FilterByColour2 filterByColour2;
        private FilterByAge filterByAge;
        private FilterByEyeColour filterByEyeColour;
        private FilterBySize filterBySize;
        private FilterByLocalization filterByLocalization;
        private FilterByHairType filterByHairType;
        private FilterByGender filterByGender;
-       private OrFilter orFilterByRaceAndColour;
-       private OrFilter orFilterByRaceColourAndAge;
-       private OrFilter orFilterByRaceColourAgeAndEyeColour;
-       private OrFilter orFilterByRaceColourAgeEyeColourAndSize;
-       private OrFilter orFilterByRaceColourAgeEyeColourSizeAndLocalization;
-       private OrFilter orFilterByRaceColourAgeEyeColourSizeLocalizationAndHairType;
-       private OrFilter orFilterByRaceColourAgeEyeColourSizeLocalizationHairTypeAndSex;
-       private AndFilter andFilterByRaceAndColour;
-       private AndFilter andFilterByRaceColourAndAge;
-       private AndFilter andFilterByRaceColourAgeAndEyeColour;
-       private AndFilter andFilterByRaceColourAgeEyeColourAndSize;
-       private AndFilter andFilterByRaceColourAgeEyeColourSizeAndLocalization;
-       private AndFilter andFilterByRaceColourAgeEyeColourSizeLocalizationAndHairType;
-       private AndFilter andFilterByRaceColourAgeEyeColourSizeLocalizationHairTypeAndSex;
+       private OrFilter orFilterByRace1AndRace2;
+       private OrFilter orFilterByRace1Race2AndColour1;
+       private OrFilter orFilterByRace1Race2Colour1AndColour2;
+       private OrFilter orFilterByRace1Race2Colour1Colour2AndAge;
+       private OrFilter orFilterByRace1Race2Colour1Colour2AgeAndEyeColour;
+       private OrFilter orFilterByRace1Race2Colour1Colour2AgeEyeColourAndSize;
+       private OrFilter orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeAndLocalization;
+       private OrFilter orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationAndHairType;
+       private OrFilter orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender;
+       private AndFilter andFilterByRace1AndRace2;
+       private AndFilter andFilterByRace1Race2AndColour1;
+       private AndFilter andFilterByRace1Race2Colour1AndColour2;
+       private AndFilter andFilterByRace1Race2Colour1Colour2AndAge;
+       private AndFilter andFilterByRace1Race2Colour1Colour2AgeAndEyeColour;
+       private AndFilter andFilterByRace1Race2Colour1Colour2AgeEyeColourAndSize;
+       private AndFilter andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeAndLocalization;
+       private AndFilter andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationAndHairType;
+       private AndFilter andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender;
        
     public FilterManager ()
   {
@@ -47,12 +53,20 @@ public class FilterManager {
         this.filterByType = new FilterByType(typesc.nextLine());
         
         System.out.println ("Ingrese raza: ");
-        Scanner racesc = new Scanner(System.in);
-        this.filterByRace = new FilterByRace1(racesc.nextLine());
+        Scanner race1sc = new Scanner(System.in);
+        this.filterByRace1 = new FilterByRace1(race1sc.nextLine());
+        
+        System.out.println ("Ingrese raza: ");
+        Scanner race2sc = new Scanner(System.in);
+        this.filterByRace2 = new FilterByRace2(race2sc.nextLine());
         
         System.out.println ("Ingrese color: ");
-        Scanner coloursc = new Scanner(System.in);
-        this.filterByColour = new FilterByColour1(coloursc.nextLine());
+        Scanner colour1sc = new Scanner(System.in);
+        this.filterByColour1 = new FilterByColour1(colour1sc.nextLine());
+        
+        System.out.println ("Ingrese color: ");
+        Scanner colour2sc = new Scanner(System.in);
+        this.filterByColour2 = new FilterByColour2(colour2sc.nextLine());
         
         System.out.println ("Ingrese edad: ");
         Scanner agesc = new Scanner(System.in);
@@ -68,32 +82,37 @@ public class FilterManager {
         
         System.out.println ("Ingrese localización: ");
         Scanner localizationsc = new Scanner(System.in);
-        FilterByLocalization filterByLocalization = new FilterByLocalization(localizationsc.nextLine());
+        this.filterByLocalization = new FilterByLocalization(localizationsc.nextLine());
         
         System.out.println ("Ingrese tipo de pelo: ");
         Scanner hairTypesc = new Scanner(System.in);
         this.filterByHairType = new FilterByHairType(hairTypesc.nextLine());
        
         System.out.println ("Ingrese sexo: ");
-        Scanner sexsc = new Scanner(System.in);
-        this.filterByGender = new FilterByGender(sexsc.nextLine());
+        Scanner gendersc = new Scanner(System.in);
+        this.filterByGender = new FilterByGender(gendersc.nextLine());
         
-        this.orFilterByRaceAndColour = new OrFilter(filterByRace, filterByColour);
-        this.orFilterByRaceColourAndAge = new OrFilter(orFilterByRaceAndColour, filterByAge);
-        this.orFilterByRaceColourAgeAndEyeColour = new OrFilter(orFilterByRaceColourAndAge, filterByEyeColour);
-        this.orFilterByRaceColourAgeEyeColourAndSize = new OrFilter(orFilterByRaceColourAgeAndEyeColour, filterBySize);
-        this.orFilterByRaceColourAgeEyeColourSizeAndLocalization = new OrFilter(orFilterByRaceColourAgeEyeColourAndSize, filterByLocalization);
-        this.orFilterByRaceColourAgeEyeColourSizeLocalizationAndHairType = new OrFilter(orFilterByRaceColourAgeEyeColourSizeAndLocalization, filterByHairType);
-        this.orFilterByRaceColourAgeEyeColourSizeLocalizationHairTypeAndSex = new OrFilter(orFilterByRaceColourAgeEyeColourSizeLocalizationAndHairType, filterByGender);
+        this.orFilterByRace1AndRace2 = new OrFilter (filterByRace1, filterByRace2);
+        this.orFilterByRace1Race2AndColour1 = new OrFilter(orFilterByRace1AndRace2, filterByColour1);
+        this.orFilterByRace1Race2Colour1AndColour2 =new OrFilter (orFilterByRace1Race2AndColour1, filterByColour2);
+        this.orFilterByRace1Race2Colour1Colour2AndAge = new OrFilter(orFilterByRace1Race2Colour1AndColour2, filterByAge);
+        this.orFilterByRace1Race2Colour1Colour2AgeAndEyeColour = new OrFilter(orFilterByRace1Race2Colour1Colour2AndAge, filterByEyeColour);
+        this.orFilterByRace1Race2Colour1Colour2AgeEyeColourAndSize = new OrFilter(orFilterByRace1Race2Colour1Colour2AgeAndEyeColour, filterBySize);
+        this.orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeAndLocalization = new OrFilter(orFilterByRace1Race2Colour1Colour2AgeEyeColourAndSize, filterByLocalization);
+        this.orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationAndHairType = new OrFilter(orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeAndLocalization, filterByHairType);
+        this.orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender = new OrFilter(orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationAndHairType, filterByGender);
     
-        this.andFilterByRaceAndColour = new AndFilter(filterByRace, filterByColour);
-        this.andFilterByRaceColourAndAge = new AndFilter(andFilterByRaceAndColour, filterByAge);
-        this.andFilterByRaceColourAgeAndEyeColour = new AndFilter(andFilterByRaceColourAndAge, filterByEyeColour);
-        this.andFilterByRaceColourAgeEyeColourAndSize = new AndFilter(andFilterByRaceColourAgeAndEyeColour, filterBySize);
-        this.andFilterByRaceColourAgeEyeColourSizeAndLocalization = new AndFilter(andFilterByRaceColourAgeEyeColourAndSize, filterByLocalization);
-        this.andFilterByRaceColourAgeEyeColourSizeLocalizationAndHairType = new AndFilter(andFilterByRaceColourAgeEyeColourSizeAndLocalization, filterByHairType);
-        this.andFilterByRaceColourAgeEyeColourSizeLocalizationHairTypeAndSex = new AndFilter(andFilterByRaceColourAgeEyeColourSizeLocalizationAndHairType, filterByGender);
-        
+        this.andFilterByRace1AndRace2 = new AndFilter (filterByRace1, filterByRace2);
+        this.andFilterByRace1Race2AndColour1 = new AndFilter(andFilterByRace1AndRace2, filterByColour1);
+        this.andFilterByRace1Race2Colour1AndColour2 =new AndFilter (andFilterByRace1Race2AndColour1, filterByColour2);
+        this.andFilterByRace1Race2Colour1Colour2AndAge = new AndFilter(andFilterByRace1Race2Colour1AndColour2, filterByAge);
+        this.andFilterByRace1Race2Colour1Colour2AgeAndEyeColour = new AndFilter(andFilterByRace1Race2Colour1Colour2AndAge, filterByEyeColour);
+        this.andFilterByRace1Race2Colour1Colour2AgeEyeColourAndSize = new AndFilter(andFilterByRace1Race2Colour1Colour2AgeAndEyeColour, filterBySize);
+        this.andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeAndLocalization = new AndFilter(andFilterByRace1Race2Colour1Colour2AgeEyeColourAndSize, filterByLocalization);
+        this.andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationAndHairType = new AndFilter(andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeAndLocalization, filterByHairType);
+        this.andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender = new AndFilter(andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationAndHairType, filterByGender);
+    
+       
          this.filterByTypeResults = new ArrayList<>();
       
        for (Pet pet : pets)
@@ -113,7 +132,7 @@ public class FilterManager {
       this.orFilterResults = new ArrayList<>();
       for (Pet pet : this.filterByTypeResults)
       {
-          if (this.orFilterByRaceColourAgeEyeColourSizeLocalizationHairTypeAndSex.filter(pet))
+          if (this.orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender.filter(pet))
           {
           this.orFilterResults.add(pet);
           counter += 1;
@@ -135,7 +154,7 @@ public class FilterManager {
       
        for (Pet pet : this.filterByTypeResults)
       {
-          if (this.andFilterByRaceColourAgeEyeColourSizeLocalizationHairTypeAndSex.filter(pet))
+          if (this.andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender.filter(pet))
           {
           this.andFilterResults.add(pet);
           counter += 1;

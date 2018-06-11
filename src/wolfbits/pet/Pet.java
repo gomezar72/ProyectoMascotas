@@ -168,44 +168,85 @@ public class Pet {
     }
 
     public float getPercentageOfMatching(Pet pet) {
-        int counter = 0;
+        int counterOfMatching = 0;
+        int counterOfAttributes = 0;
         float percentageOfMatching = 0;
         if (this.type.equals(pet.getType())) {
-            if (this.race1.equals(pet.getRace1())) {
-                counter += 1;
+            if (this.race1 != null)
+            {
+                if (this.race1.equals(pet.getRace1()))
+                {
+                    counterOfMatching += 1;
+                }
             }
-            if (this.colour1.equals(pet.getColour1())) {
-                counter += 1;
+            if (this.colour1 != null)
+            {
+                if (this.colour1.equals(pet.getColour1())) 
+                {
+                    counterOfMatching += 1;
+                }
             }
-            if (this.race2.equals(pet.getRace2())) {
-                counter += 1;
+            if (this.race2 != null)
+            {
+                if (this.race2.equals(pet.getRace2()))
+                {
+                    counterOfMatching += 1;
+                }
             }
-            if (this.colour2.equals(pet.getColour2())) {
-                counter += 1;
+            if (this.colour2 != null)
+            {
+                if (this.colour2.equals(pet.getColour2())) 
+                {
+                    counterOfMatching += 1;
+                }
             }
-            if (this.size.equals(pet.getSize())) {
-                counter += 1;
+            if (this.size != " ")
+            {
+                if (this.size.equals(pet.getSize()))
+                {
+                    counterOfMatching += 1;
+                }
             }
-            if (this.age.equals(pet.getAge())) {
-                counter += 1;
+            if (this.age != " ")
+            {
+                if (this.age.equals(pet.getAge())) 
+                {
+                    counterOfMatching += 1;
+                }
             }
-            if (this.eyeColour.equals(pet.getEyeColour())) {
-                counter += 1;
+            if (this.eyeColour != " ")
+            {
+                if (this.eyeColour.equals(pet.getEyeColour())) 
+                {
+                    counterOfMatching += 1;
+                }
             }
-            if (this.gender.equals(pet.getGender())) {
-                counter += 1;
+            if (this.gender != " ")
+            {
+                if (this.gender.equals(pet.getGender())) 
+                {
+                    counterOfMatching += 1;
+                }
             }
-            if (this.hairType.equals(pet.getHairType())) {
-                counter += 1;
+            if (this.hairType != " ")
+            {
+                if (this.hairType.equals(pet.getHairType())) 
+                {
+                    counterOfMatching += 1;
+                }
             }
-            if (this.localization.equals(pet.getLocalization())) {
-                counter += 1;
+            if (this.localization != " ")
+            {
+                if (this.localization.equals(pet.getLocalization())) 
+                {
+                    counterOfMatching += 1;
+                }
             }
         } else {
-            counter = 0;
+            counterOfMatching = 0;
         }
 
-        percentageOfMatching = (counter * 100) / 10;
+        percentageOfMatching = (counterOfMatching * 100) / counterOfAttributes;
 
         return percentageOfMatching;
     }
