@@ -4,16 +4,16 @@ package wolfbits.post.filters;
 import wolfbits.pet.Pet;
 
 public class FilterByGender extends AbstractFilter{
-    private String sex;
+    private String gender;
     
     public FilterByGender(String sex)
     {
-        this.sex = sex;
+        this.gender = gender;
     }
     
     @Override
     public boolean filter(Pet pet)
     {
-        return pet.getSex().equals(this.sex);
+        return pet.getGender().equals(this.gender);
     }  
 }

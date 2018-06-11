@@ -3,10 +3,10 @@ package wolfbits.post.filters;
 
 import wolfbits.pet.Pet;
 
-public class FilterByColour  extends AbstractFilter{
+public class FilterByColour1  extends AbstractFilter{
     private String colour;
     
-    public FilterByColour(String colour)
+    public FilterByColour1(String colour)
     {
         this.colour = colour;
     }
@@ -14,6 +14,6 @@ public class FilterByColour  extends AbstractFilter{
     @Override
     public boolean filter(Pet pet)
     {
-        return pet.getColour().equals(this.colour);
+        return pet.getColour1().getName()== this.colour;
     }  
 }

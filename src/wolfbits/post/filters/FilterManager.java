@@ -11,8 +11,8 @@ public class FilterManager {
        List <Pet> filterByTypeResults;
        List <Pet> orFilterResults;
        List <Pet> andFilterResults;
-       private FilterByRace filterByRace;
-       private FilterByColour filterByColour;
+       private FilterByRace1 filterByRace;
+       private FilterByColour1 filterByColour;
        private FilterByAge filterByAge;
        private FilterByEyeColour filterByEyeColour;
        private FilterBySize filterBySize;
@@ -48,11 +48,11 @@ public class FilterManager {
         
         System.out.println ("Ingrese raza: ");
         Scanner racesc = new Scanner(System.in);
-        this.filterByRace = new FilterByRace(racesc.nextLine());
+        this.filterByRace = new FilterByRace1(racesc.nextLine());
         
         System.out.println ("Ingrese color: ");
         Scanner coloursc = new Scanner(System.in);
-        this.filterByColour = new FilterByColour(coloursc.nextLine());
+        this.filterByColour = new FilterByColour1(coloursc.nextLine());
         
         System.out.println ("Ingrese edad: ");
         Scanner agesc = new Scanner(System.in);
