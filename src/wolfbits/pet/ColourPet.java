@@ -4,12 +4,12 @@ package wolfbits.pet;
 import java.io.File;
 
 
-public class ColorPet {
+public class ColourPet {
    
     private String name;
     private File photo;
 
-    public ColorPet(String name) {
+    public ColourPet(String name) {
         this.name = name;
     }
 
