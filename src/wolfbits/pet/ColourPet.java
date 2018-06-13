@@ -9,6 +9,11 @@ public class ColourPet {
     private String name;
     private File photo;
 
+    public ColourPet ()
+    {
+        
+    }
+    
     public ColourPet(String name) {
         this.name = name;
     }

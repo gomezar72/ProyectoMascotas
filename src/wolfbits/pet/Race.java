@@ -10,6 +10,11 @@ public class Race {
     private String description;
     private File photo;
     private String type;
+    
+    public Race ()
+    {
+        
+    }
 
     public Race(String name, String description, String type) {
         this.name = name;

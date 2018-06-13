@@ -9,7 +9,7 @@ import wolfbits.pet.Pet;
 public class FilterManager {
        private FilterByType filterByType;
        List <Pet> filterByTypeResults;
-       List <Pet> orFilterResults;
+       List <Pet> orFilterResults ;
        List <Pet> andFilterResults;
        private FilterByRace1 filterByRace1;
        private FilterByRace2 filterByRace2;
@@ -49,7 +49,6 @@ public class FilterManager {
     {
         System.out.println ("Ingrese tipo: ");
         Scanner typesc = new Scanner(System.in);
-        
         this.filterByType = new FilterByType(typesc.nextLine());
         
         System.out.println ("Ingrese raza: ");
@@ -112,16 +111,27 @@ public class FilterManager {
         this.andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationAndHairType = new AndFilter(andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeAndLocalization, filterByHairType);
         this.andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender = new AndFilter(andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationAndHairType, filterByGender);
     
+    }
+    
+    public void filterByType(List <Pet> pets)
+    {
+       this.filterByTypeResults = new ArrayList<>();
+      int counter = 0;
        
-         this.filterByTypeResults = new ArrayList<>();
-      
        for (Pet pet : pets)
       {
           if (this.filterByType.filter(pet))
           {
           this.filterByTypeResults.add(pet);
+            counter += 1;
           }
       }
+       System.out.println("Resultados filtro por tipo " + "(" + counter + ")" );
+           
+      for (Pet result : this.filterByTypeResults )
+      {
+         System.out.println(result.toString());
+    }
       
     }
     
@@ -144,7 +154,7 @@ public class FilterManager {
       for (Pet result : orFilterResults)
       {
          System.out.println(result.toString());
-    }
+      }
   }
     
     public void andFilter (List <Pet> pets)
@@ -168,4 +178,14 @@ public class FilterManager {
          System.out.println(result.toString());
     }
   }
+    
+    public List<Pet> getOrResults()
+    {
+        return this.orFilterResults;
+    }
+    
+    public List<Pet> getAndResults()
+    {
+        return this.andFilterResults;
+    }
 }

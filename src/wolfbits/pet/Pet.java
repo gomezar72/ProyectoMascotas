@@ -24,6 +24,7 @@ public class Pet {
     private String localization = " "; //localización, barrio o calles por el que fue visto en el caso en que sea perdido, o en el caso de encontrado barrio o calles en que vive
     private User keeper = null; // cuidador cuando es encontrado
     private User owner = null; // el dueño real cuando es perdido
+    private float percentageOfMatching = 0;
 
     public Pet() {
 
@@ -166,11 +167,24 @@ public class Pet {
     public String getLocalization() {
         return localization;
     }
+    
+    public void setPercentageOfMatching(float percentageOfMatching) {
+        this.percentageOfMatching = percentageOfMatching;
+    }
 
-    public float getPercentageOfMatching(Pet pet) {
+    public float getPercentageOfMatching() {
+        return percentageOfMatching ;
+    }
+    
+     @Override
+    public String toString() {
+        return "Nombre: " + this.name + " Tipo: " + this.type + " Colores: " + this.colour1.getName() + " , " + this.colour2.getName() + " Edad: " + this.age + " Tamaño: " + this.size + " Color de ojos: " + this.eyeColour + " Sexo: " + this.gender + " Localización: " + this.localization + "Raza: " + this.race1.getName() + this.race2.getName();
+    }
+
+    public void calculatePercentageOfMatching(Pet pet) {
         int counterOfMatching = 0;
         int counterOfAttributes = 0;
-        float percentageOfMatching = 0;
+       
         if (this.type.equals(pet.getType())) {
             if (this.race1 != null)
             {
@@ -178,6 +192,7 @@ public class Pet {
                 {
                     counterOfMatching += 1;
                 }
+                counterOfAttributes += 1;
             }
             if (this.colour1 != null)
             {
@@ -185,6 +200,7 @@ public class Pet {
                 {
                     counterOfMatching += 1;
                 }
+                counterOfAttributes += 1;
             }
             if (this.race2 != null)
             {
@@ -192,6 +208,7 @@ public class Pet {
                 {
                     counterOfMatching += 1;
                 }
+                counterOfAttributes += 1;
             }
             if (this.colour2 != null)
             {
@@ -199,70 +216,84 @@ public class Pet {
                 {
                     counterOfMatching += 1;
                 }
+                counterOfAttributes += 1;
             }
-            if (this.size != " ")
+            if (!this.size.equals(" "))
             {
                 if (this.size.equals(pet.getSize()))
                 {
                     counterOfMatching += 1;
                 }
+                counterOfAttributes += 1;
             }
-            if (this.age != " ")
+            if (!this.age.equals(" "))
             {
                 if (this.age.equals(pet.getAge())) 
                 {
                     counterOfMatching += 1;
                 }
+                counterOfAttributes += 1;
             }
-            if (this.eyeColour != " ")
+            if (!this.eyeColour.equals(" "))
             {
                 if (this.eyeColour.equals(pet.getEyeColour())) 
                 {
                     counterOfMatching += 1;
                 }
+                counterOfAttributes += 1;
             }
-            if (this.gender != " ")
+            if (!this.gender.equals(" "))
             {
                 if (this.gender.equals(pet.getGender())) 
                 {
                     counterOfMatching += 1;
                 }
+                counterOfAttributes += 1;
             }
-            if (this.hairType != " ")
+            if (!this.hairType.equals(" "))
             {
                 if (this.hairType.equals(pet.getHairType())) 
                 {
                     counterOfMatching += 1;
                 }
+                counterOfAttributes += 1;
             }
-            if (this.localization != " ")
+            if (!this.localization.equals(" "))
             {
                 if (this.localization.equals(pet.getLocalization())) 
                 {
                     counterOfMatching += 1;
                 }
+                counterOfAttributes += 1;
             }
         } else {
             counterOfMatching = 0;
         }
-
-        percentageOfMatching = (counterOfMatching * 100) / counterOfAttributes;
-
-        return percentageOfMatching;
+        if (counterOfMatching != 0 || counterOfAttributes != 0)
+        {
+        this.percentageOfMatching = (counterOfMatching * 100) / counterOfAttributes;
+        }
+        else
+        {
+            this.percentageOfMatching = 0;
+        }
+        pet.setPercentageOfMatching(percentageOfMatching);
     }
 
     public void calculateMatches(List<Pet> pets) {
-        List<Float> results = new ArrayList<>();
+        List<Pet> results = new ArrayList<>();
 
         for (Pet pet : pets) {
-            if (pet != this) {
-                results.add(this.getPercentageOfMatching(pet));
+            if (pet != this) 
+            {
+              this.calculatePercentageOfMatching(pet);
+                results.add(pet);
             }
         }
 
         System.out.println("MATCHES: ");
         boolean swapped = true;
-        float aux;
+        Pet aux;
         int j = 0;
 
         while (swapped) {
@@ -270,7 +301,7 @@ public class Pet {
             j++;
 
             for (int i = 0; i < results.size() - j; i++) {
-                if (results.get(i) < results.get((i + 1))) {
+                if (results.get(i).getPercentageOfMatching() < results.get((i + 1)).getPercentageOfMatching()) {
                     aux = results.get(i);
                     results.set(i, results.get(i + 1));
                     results.set((i + 1), aux);
@@ -280,17 +311,13 @@ public class Pet {
             }
         }
 
-        for (Float result : results) {
-            if (result != 0) {
-                System.out.println(result + " % de coincidencia");
+        for (Pet result : results) {
+            if (result.getPercentageOfMatching() != 0) 
+            {
+                System.out.println(result.toString() + result.getPercentageOfMatching() + " % de coincidencia");
             }
         }
     }
-
-    public String toString() {
-        return "Nombre: " + this.name + " Tipo: " + this.type + " Colores: " + this.colour1 + " , " + this.colour2 + " Edad: " + this.age + " Tamaño: " + this.size + " Color de ojos: " + this.eyeColour + " Sexo: " + this.gender + " Localización: " + this.localization + "Raza: " + this.race1 + this.race2;
-    }
-
 }
 
 //contructores:mandatorios: razas, tipoAnimal,colores,sexo, tamaño,
