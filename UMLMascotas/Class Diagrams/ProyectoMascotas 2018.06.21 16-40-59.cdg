@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ProyectoMascotas">
+  <ClassDiagramComponents>
+    <Class name="LogIn" package="wolfbits.logins" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="user" type="User" visibility="private"/>
+        <Field name="password" type="String" visibility="private"/>
+        <Field name="isLogued" type="boolean" visibility="package"/>
+        <Field name="LastActivity" type="Date" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="User" name="user"/>
+          <Argument type="String" name="password"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getUser" returnType="User" visibility="public"/>
+        <Method name="setUser" returnType="void" visibility="public">
+          <Argument type="User" name="user"/>
+        </Method>
+        <Method name="getPassword" returnType="String" visibility="public"/>
+        <Method name="setPassword" returnType="void" visibility="public">
+          <Argument type="String" name="password"/>
+        </Method>
+        <Method name="isIsLogued" returnType="boolean" visibility="public"/>
+        <Method name="setIsLogued" returnType="void" visibility="public">
+          <Argument type="boolean" name="isLogued"/>
+        </Method>
+        <Method name="getLastActivity" returnType="Date" visibility="public"/>
+        <Method name="setLastActivity" returnType="void" visibility="public">
+          <Argument type="Date" name="LastActivity"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="LogInManager" package="wolfbits.logins" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="logInList" type="List&lt;LogIn&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="List" name="lil"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="register" returnType="void" visibility="public">
+          <Argument type="LogIn" name="logIn"/>
+        </Method>
+        <Method name="logIn" returnType="boolean" visibility="public">
+          <Argument type="LogIn" name="logIn"/>
+          <Argument type="String" name="introducedID"/>
+          <Argument type="String" name="introducedPassword"/>
+        </Method>
+        <Method name="logOut" returnType="void" visibility="public">
+          <Argument type="LogIn" name="logIn"/>
+        </Method>
+        <Method name="generateRandomPass" returnType="Mail" visibility="public">
+          <Argument type="LogIn" name="logIn"/>
+        </Method>
+        <Method name="validateEmail" returnType="boolean" visibility="public">
+          <Argument type="LogIn" name="logIn"/>
+        </Method>
+        <Method name="validateLogIn" returnType="boolean" visibility="public">
+          <Argument type="LogIn" name="logIn"/>
+          <Argument type="String" name="introducedID"/>
+          <Argument type="String" name="introducedPassword"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Dashboard" package="wolfbits.main" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="puppet" type="List&lt;Pet&gt;" visibility="private"/>
+        <Field name="post" type="List&lt;Post&gt;" visibility="private"/>
+        <Field name="users" type="List&lt;User&gt;" visibility="private"/>
+        <Field name="userManager" type="UserManager" visibility="private"/>
+        <Field name="postManager" type="PostManager" visibility="private"/>
+        <Field name="puppetManager" type="PetManager" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="UserManager" name="userManager"/>
+          <Argument type="PostManager" name="postManager"/>
+          <Argument type="PetManager" name="puppetManager"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMascotas" returnType="List&lt;Pet&gt;" visibility="public"/>
+        <Method name="setMascotas" returnType="void" visibility="public">
+          <Argument type="List&lt;Pet&gt;" name="mascotas"/>
+        </Method>
+        <Method name="getPublicacion" returnType="List&lt;Post&gt;" visibility="public"/>
+        <Method name="setPublicacion" returnType="void" visibility="public">
+          <Argument type="List&lt;Post&gt;" name="publicacion"/>
+        </Method>
+        <Method name="getUsuarios" returnType="List&lt;User&gt;" visibility="public"/>
+        <Method name="setUsuarios" returnType="void" visibility="public">
+          <Argument type="List&lt;User&gt;" name="usuarios"/>
+        </Method>
+        <Method name="getUserManager" returnType="UserManager" visibility="public"/>
+        <Method name="setUserManager" returnType="void" visibility="public">
+          <Argument type="UserManager" name="userManager"/>
+        </Method>
+        <Method name="getPostManager" returnType="PostManager" visibility="public"/>
+        <Method name="setPostManager" returnType="void" visibility="public">
+          <Argument type="PostManager" name="postManager"/>
+        </Method>
+        <Method name="getPuppetManager" returnType="PetManager" visibility="public"/>
+        <Method name="setPuppetManager" returnType="void" visibility="public">
+          <Argument type="PetManager" name="puppetManager"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="main" package="wolfbits.main" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ColourPet" package="wolfbits.pet" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="photo" type="File" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getPhoto" returnType="File" visibility="public"/>
+        <Method name="setPhoto" returnType="void" visibility="public">
+          <Argument type="File" name="photo"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Pet" package="wolfbits.pet" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="races" type="List&lt;Race&gt;" visibility="private"/>
+        <Field name="race1" type="Race" visibility="private"/>
+        <Field name="race2" type="Race" visibility="private"/>
+        <Field name="Colour" type="List&lt;ColourPet&gt;" visibility="private"/>
+        <Field name="type" type="String" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="colour1" type="ColourPet" visibility="private"/>
+        <Field name="colour2" type="ColourPet" visibility="private"/>
+        <Field name="size" type="String" visibility="private"/>
+        <Field name="age" type="String" visibility="private"/>
+        <Field name="description" type="String" visibility="private"/>
+        <Field name="eyeColour" type="String" visibility="private"/>
+        <Field name="gender" type="String" visibility="private"/>
+        <Field name="hairType" type="String" visibility="private"/>
+        <Field name="localization" type="String" visibility="private"/>
+        <Field name="keeper" type="User" visibility="private"/>
+        <Field name="owner" type="User" visibility="private"/>
+        <Field name="percentageOfMatching" type="float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="description"/>
+          <Argument type="String" name="eyeColour"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="String" name="hairType"/>
+          <Argument type="ColourPet" name="colour1"/>
+          <Argument type="ColourPet" name="colour2"/>
+          <Argument type="User" name="keeper"/>
+          <Argument type="String" name="type"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="size"/>
+          <Argument type="String" name="age"/>
+          <Argument type="Race" name="race1"/>
+          <Argument type="Race" name="race2"/>
+          <Argument type="String" name="localization"/>
+          <Argument type="User" name="owner"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setDescription" returnType="void" visibility="public">
+          <Argument type="String" name="description"/>
+        </Method>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="setEyeColour" returnType="void" visibility="public">
+          <Argument type="String" name="eyeColour"/>
+        </Method>
+        <Method name="getEyeColour" returnType="String" visibility="public"/>
+        <Method name="setGender" returnType="void" visibility="public">
+          <Argument type="String" name="gender"/>
+        </Method>
+        <Method name="getGender" returnType="String" visibility="public"/>
+        <Method name="setHairType" returnType="void" visibility="public">
+          <Argument type="String" name="hairType"/>
+        </Method>
+        <Method name="getHairType" returnType="String" visibility="public"/>
+        <Method name="setColour1" returnType="void" visibility="public">
+          <Argument type="ColourPet" name="colour1"/>
+        </Method>
+        <Method name="getColour1" returnType="ColourPet" visibility="public"/>
+        <Method name="setColour2" returnType="void" visibility="public">
+          <Argument type="ColourPet" name="colour2"/>
+        </Method>
+        <Method name="getColour2" returnType="ColourPet" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setTYpe" returnType="void" visibility="public">
+          <Argument type="String" name="type"/>
+        </Method>
+        <Method name="getType" returnType="String" visibility="public"/>
+        <Method name="setRace1" returnType="void" visibility="public">
+          <Argument type="Race" name="race1"/>
+        </Method>
+        <Method name="getRace1" returnType="Race" visibility="public"/>
+        <Method name="setRace2" returnType="void" visibility="public">
+          <Argument type="Race" name="race2"/>
+        </Method>
+        <Method name="getRace2" returnType="Race" visibility="public"/>
+        <Method name="setSize" returnType="void" visibility="public">
+          <Argument type="String" name="size"/>
+        </Method>
+        <Method name="getSize" returnType="String" visibility="public"/>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="String" name="age"/>
+        </Method>
+        <Method name="getAge" returnType="String" visibility="public"/>
+        <Method name="setOwner" returnType="void" visibility="public">
+          <Argument type="User" name="owner"/>
+        </Method>
+        <Method name="getOwner" returnType="User" visibility="public"/>
+        <Method name="setKeeper" returnType="void" visibility="public">
+          <Argument type="User" name="keeper"/>
+        </Method>
+        <Method name="getKeeper" returnType="User" visibility="public"/>
+        <Method name="setLocalization" returnType="void" visibility="public">
+          <Argument type="String" name="localization"/>
+        </Method>
+        <Method name="getLocalization" returnType="String" visibility="public"/>
+        <Method name="setPercentageOfMatching" returnType="void" visibility="public">
+          <Argument type="float" name="percentageOfMatching"/>
+        </Method>
+        <Method name="getPercentageOfMatching" returnType="float" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="calculatePercentageOfMatching" returnType="void" visibility="public">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+        <Method name="calculateMatches" returnType="void" visibility="public">
+          <Argument type="List&lt;Pet&gt;" name="pets"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PetManager" package="wolfbits.pet" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="editPuppet" returnType="void" visibility="public">
+          <Argument type="Pet" name="puppet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Race" package="wolfbits.pet" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="description" type="String" visibility="private"/>
+        <Field name="photo" type="File" visibility="private"/>
+        <Field name="type" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="description"/>
+          <Argument type="String" name="type"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="setDescription" returnType="void" visibility="public">
+          <Argument type="String" name="description"/>
+        </Method>
+        <Method name="getPhoto" returnType="File" visibility="public"/>
+        <Method name="setPhoto" returnType="void" visibility="public">
+          <Argument type="File" name="photo"/>
+        </Method>
+        <Method name="getType" returnType="String" visibility="public"/>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="String" name="type"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Comment" package="wolfbits.post" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="user" type="User" visibility="private"/>
+        <Field name="date" type="Date" visibility="private"/>
+        <Field name="body" type="String" visibility="private"/>
+        <Field name="isdeleted" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="User" name="user"/>
+          <Argument type="String" name="body"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setUser" returnType="void" visibility="public">
+          <Argument type="User" name="user"/>
+        </Method>
+        <Method name="getUser" returnType="User" visibility="public"/>
+        <Method name="setdate" returnType="void" visibility="public"/>
+        <Method name="getDate" returnType="Date" visibility="public"/>
+        <Method name="setBody" returnType="void" visibility="public">
+          <Argument type="String" name="body"/>
+        </Method>
+        <Method name="getBody" returnType="String" visibility="public"/>
+        <Method name="setisDeleted" returnType="void" visibility="public">
+          <Argument type="boolean" name="isDel"/>
+        </Method>
+        <Method name="getIsDeleted" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Complaint" package="wolfbits.post" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="user" type="User" visibility="private"/>
+        <Field name="date" type="Date" visibility="private"/>
+        <Field name="body" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="User" name="user"/>
+          <Argument type="String" name="body"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getUser" returnType="User" visibility="public"/>
+        <Method name="setUser" returnType="void" visibility="public">
+          <Argument type="User" name="user"/>
+        </Method>
+        <Method name="getDate" returnType="Date" visibility="public"/>
+        <Method name="setDate" returnType="void" visibility="public">
+          <Argument type="Date" name="date"/>
+        </Method>
+        <Method name="getBody" returnType="String" visibility="public"/>
+        <Method name="setBody" returnType="void" visibility="public">
+          <Argument type="String" name="body"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="AbstractFilter" package="wolfbits.post.filters" visibility="public" isAbstract="true" xPosition="620.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="filter" returnType="boolean" visibility="public" isAbstract="true">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="AndFilter" package="wolfbits.post.filters" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="AbstractFilter" name="filter1"/>
+          <Argument type="AbstractFilter" name="filter2"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="filter" returnType="boolean" visibility="public">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CompoundFilter" package="wolfbits.post.filters" visibility="public" isAbstract="true" xPosition="1220.0" yPosition="420.0">
+      <Fields>
+        <Field name="filter1" type="AbstractFilter" visibility="protected"/>
+        <Field name="filter2" type="AbstractFilter" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="AbstractFilter" name="f1"/>
+          <Argument type="AbstractFilter" name="f2"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="filter" returnType="boolean" visibility="public" isAbstract="true">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FilterByAge" package="wolfbits.post.filters" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields>
+        <Field name="age" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="age"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="filter" returnType="boolean" visibility="public">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FilterByColour1" package="wolfbits.post.filters" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields>
+        <Field name="colour1" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="colour1"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="filter" returnType="boolean" visibility="public">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FilterByColour2" package="wolfbits.post.filters" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields>
+        <Field name="colour2" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="colour2"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="filter" returnType="boolean" visibility="public">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FilterByEyeColour" package="wolfbits.post.filters" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields>
+        <Field name="eyeColour" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="eyeColour"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="filter" returnType="boolean" visibility="public">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FilterByGender" package="wolfbits.post.filters" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Fields>
+        <Field name="gender" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="sex"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="filter" returnType="boolean" visibility="public">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FilterByHairType" package="wolfbits.post.filters" visibility="public" xPosition="620.0" yPosition="820.0">
+      <Fields>
+        <Field name="hairType" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="hairType"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="filter" returnType="boolean" visibility="public">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FilterByLocalization" package="wolfbits.post.filters" visibility="public" xPosition="920.0" yPosition="820.0">
+      <Fields>
+        <Field name="localization" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="localization"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="filter" returnType="boolean" visibility="public">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FilterByRace1" package="wolfbits.post.filters" visibility="public" xPosition="1220.0" yPosition="820.0">
+      <Fields>
+        <Field name="race1" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="race1"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="filter" returnType="boolean" visibility="public">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FilterByRace2" package="wolfbits.post.filters" visibility="public" xPosition="1520.0" yPosition="820.0">
+      <Fields>
+        <Field name="race2" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="race2"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="filter" returnType="boolean" visibility="public">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FilterBySize" package="wolfbits.post.filters" visibility="public" xPosition="1820.0" yPosition="820.0">
+      <Fields>
+        <Field name="size" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="size"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="filter" returnType="boolean" visibility="public">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FilterByType" package="wolfbits.post.filters" visibility="public" xPosition="2120.0" yPosition="820.0">
+      <Fields>
+        <Field name="type" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="type"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="filter" returnType="boolean" visibility="public">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FilterManager" package="wolfbits.post.filters" visibility="public" xPosition="20.0" yPosition="1220.0">
+      <Fields>
+        <Field name="filterByType" type="FilterByType" visibility="private"/>
+        <Field name="filterByTypeResults" type="List&lt;Pet&gt;" visibility="package"/>
+        <Field name="orFilterResults" type="List&lt;Pet&gt;" visibility="package"/>
+        <Field name="andFilterResults" type="List&lt;Pet&gt;" visibility="package"/>
+        <Field name="filterByRace1" type="FilterByRace1" visibility="private"/>
+        <Field name="filterByRace2" type="FilterByRace2" visibility="private"/>
+        <Field name="filterByColour1" type="FilterByColour1" visibility="private"/>
+        <Field name="filterByColour2" type="FilterByColour2" visibility="private"/>
+        <Field name="filterByAge" type="FilterByAge" visibility="private"/>
+        <Field name="filterByEyeColour" type="FilterByEyeColour" visibility="private"/>
+        <Field name="filterBySize" type="FilterBySize" visibility="private"/>
+        <Field name="filterByLocalization" type="FilterByLocalization" visibility="private"/>
+        <Field name="filterByHairType" type="FilterByHairType" visibility="private"/>
+        <Field name="filterByGender" type="FilterByGender" visibility="private"/>
+        <Field name="orFilterByRace1AndRace2" type="OrFilter" visibility="private"/>
+        <Field name="orFilterByRace1Race2AndColour1" type="OrFilter" visibility="private"/>
+        <Field name="orFilterByRace1Race2Colour1AndColour2" type="OrFilter" visibility="private"/>
+        <Field name="orFilterByRace1Race2Colour1Colour2AndAge" type="OrFilter" visibility="private"/>
+        <Field name="orFilterByRace1Race2Colour1Colour2AgeAndEyeColour" type="OrFilter" visibility="private"/>
+        <Field name="orFilterByRace1Race2Colour1Colour2AgeEyeColourAndSize" type="OrFilter" visibility="private"/>
+        <Field name="orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeAndLocalization" type="OrFilter" visibility="private"/>
+        <Field name="orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationAndHairType" type="OrFilter" visibility="private"/>
+        <Field name="orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender" type="OrFilter" visibility="private"/>
+        <Field name="andFilterByRace1AndRace2" type="AndFilter" visibility="private"/>
+        <Field name="andFilterByRace1Race2AndColour1" type="AndFilter" visibility="private"/>
+        <Field name="andFilterByRace1Race2Colour1AndColour2" type="AndFilter" visibility="private"/>
+        <Field name="andFilterByRace1Race2Colour1Colour2AndAge" type="AndFilter" visibility="private"/>
+        <Field name="andFilterByRace1Race2Colour1Colour2AgeAndEyeColour" type="AndFilter" visibility="private"/>
+        <Field name="andFilterByRace1Race2Colour1Colour2AgeEyeColourAndSize" type="AndFilter" visibility="private"/>
+        <Field name="andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeAndLocalization" type="AndFilter" visibility="private"/>
+        <Field name="andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationAndHairType" type="AndFilter" visibility="private"/>
+        <Field name="andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender" type="AndFilter" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="List&lt;Pet&gt;" name="pets"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="filterByType" returnType="void" visibility="public">
+          <Argument type="List&lt;Pet&gt;" name="pets"/>
+        </Method>
+        <Method name="orFilter" returnType="void" visibility="public">
+          <Argument type="List&lt;Pet&gt;" name="pets"/>
+        </Method>
+        <Method name="andFilter" returnType="void" visibility="public">
+          <Argument type="List&lt;Pet&gt;" name="pets"/>
+        </Method>
+        <Method name="getOrResults" returnType="List&lt;Pet&gt;" visibility="public"/>
+        <Method name="getAndResults" returnType="List&lt;Pet&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="OrFilter" package="wolfbits.post.filters" visibility="public" xPosition="320.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="AbstractFilter" name="filter1"/>
+          <Argument type="AbstractFilter" name="filter2"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="filter" returnType="boolean" visibility="public">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Post" package="wolfbits.post" visibility="public" xPosition="620.0" yPosition="1220.0">
+      <Fields>
+        <Field name="pet" type="Pet" visibility="private"/>
+        <Field name="user" type="User" visibility="private"/>
+        <Field name="startDate" type="Date" visibility="private"/>
+        <Field name="endDate" type="Date" visibility="private"/>
+        <Field name="status" type="String" visibility="private"/>
+        <Field name="type" type="String" visibility="private"/>
+        <Field name="accusers" type="List&lt;User&gt;" visibility="private"/>
+        <Field name="comments" type="List&lt;Comment&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Pet" name="pet"/>
+          <Argument type="User" name="user"/>
+          <Argument type="Date" name="startDate"/>
+          <Argument type="String" name="type"/>
+          <Argument type="String" name="status"/>
+          <Argument type="Date" name="endDate"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getUser" returnType="User" visibility="public"/>
+        <Method name="setUser" returnType="void" visibility="public">
+          <Argument type="User" name="user"/>
+        </Method>
+        <Method name="getStartDate" returnType="Date" visibility="public"/>
+        <Method name="setStartDate" returnType="void" visibility="public">
+          <Argument type="Date" name="startDate"/>
+        </Method>
+        <Method name="getEndDate" returnType="Date" visibility="public"/>
+        <Method name="setEndDate" returnType="void" visibility="public">
+          <Argument type="Date" name="endDate"/>
+        </Method>
+        <Method name="getStatus" returnType="String" visibility="public"/>
+        <Method name="setStatus" returnType="void" visibility="public">
+          <Argument type="String" name="status"/>
+        </Method>
+        <Method name="getType" returnType="String" visibility="public"/>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="String" name="type"/>
+        </Method>
+        <Method name="getAccusers" returnType="List&lt;User&gt;" visibility="public"/>
+        <Method name="setAccusers" returnType="void" visibility="public">
+          <Argument type="List&lt;User&gt;" name="accusers"/>
+        </Method>
+        <Method name="getComments" returnType="List&lt;Comment&gt;" visibility="public"/>
+        <Method name="setComments" returnType="void" visibility="public">
+          <Argument type="List&lt;Comment&gt;" name="comments"/>
+        </Method>
+        <Method name="getPet" returnType="Pet" visibility="public"/>
+        <Method name="setPet" returnType="void" visibility="public">
+          <Argument type="Pet" name="pet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PostManager" package="wolfbits.post" visibility="public" xPosition="920.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="findPet" returnType="void" visibility="public">
+          <Argument type="Pet" name="m"/>
+        </Method>
+        <Method name="reportPost" returnType="void" visibility="public">
+          <Argument type="Post" name="p"/>
+        </Method>
+        <Method name="deletePost" returnType="void" visibility="public">
+          <Argument type="Post" name="p"/>
+        </Method>
+        <Method name="changeOwner" returnType="void" visibility="public">
+          <Argument type="Post" name="p"/>
+          <Argument type="User" name="u"/>
+        </Method>
+        <Method name="commentPost" returnType="void" visibility="public">
+          <Argument type="Post" name="p"/>
+          <Argument type="User" name="u"/>
+          <Argument type="Comment" name="c"/>
+        </Method>
+        <Method name="editPost" returnType="void" visibility="public">
+          <Argument type="Post" name="post"/>
+        </Method>
+        <Method name="updatePost" returnType="void" visibility="public">
+          <Argument type="Post" name="post"/>
+        </Method>
+        <Method name="previewPost" returnType="void" visibility="public">
+          <Argument type="Post" name="post"/>
+        </Method>
+        <Method name="createPost" returnType="void" visibility="public">
+          <Argument type="Pet" name="pet"/>
+          <Argument type="User" name="user"/>
+          <Argument type="Date" name="startDate"/>
+          <Argument type="Date" name="endDate"/>
+          <Argument type="String" name="status"/>
+          <Argument type="String" name="type"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Address" package="wolfbits.user" visibility="public" xPosition="1220.0" yPosition="1220.0">
+      <Fields>
+        <Field name="street" type="String" visibility="private"/>
+        <Field name="nomenclature" type="int" visibility="private"/>
+        <Field name="floor" type="String" visibility="private"/>
+        <Field name="city" type="String" visibility="private"/>
+        <Field name="province" type="String" visibility="private"/>
+        <Field name="additionalInformation" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="street"/>
+          <Argument type="int" name="nomenclature"/>
+          <Argument type="String" name="city"/>
+          <Argument type="String" name="province"/>
+          <Argument type="String" name="additionalInformation"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="street"/>
+          <Argument type="int" name="nomenclature"/>
+          <Argument type="String" name="floor"/>
+          <Argument type="String" name="city"/>
+          <Argument type="String" name="province"/>
+          <Argument type="String" name="additionalInformation"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setStreet" returnType="void" visibility="public">
+          <Argument type="String" name="st"/>
+        </Method>
+        <Method name="getStreet" returnType="String" visibility="public"/>
+        <Method name="setNomenclature" returnType="void" visibility="public">
+          <Argument type="int" name="nomenclature"/>
+        </Method>
+        <Method name="getNomenclature" returnType="int" visibility="public"/>
+        <Method name="setFloor" returnType="void" visibility="public">
+          <Argument type="String" name="floor"/>
+        </Method>
+        <Method name="getFloor" returnType="String" visibility="public"/>
+        <Method name="setCity" returnType="void" visibility="public">
+          <Argument type="String" name="city"/>
+        </Method>
+        <Method name="getCity" returnType="String" visibility="public"/>
+        <Method name="setProvince" returnType="void" visibility="public">
+          <Argument type="String" name="prov"/>
+        </Method>
+        <Method name="getProvince" returnType="String" visibility="public"/>
+        <Method name="setAdditionaInformation" returnType="void" visibility="public">
+          <Argument type="String" name="AI"/>
+        </Method>
+        <Method name="getAdditionalInformation" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Mail" package="wolfbits.user" visibility="public" xPosition="1520.0" yPosition="1220.0">
+      <Fields>
+        <Field name="Subject" type="String" visibility="private"/>
+        <Field name="receiver" type="String" visibility="private"/>
+        <Field name="body" type="String" visibility="private"/>
+        <Field name="newPassword" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="receiver"/>
+          <Argument type="String" name="newPassword"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setSubject" returnType="void" visibility="public">
+          <Argument type="String" name="subject"/>
+        </Method>
+        <Method name="getSubject" returnType="String" visibility="public"/>
+        <Method name="setReceiver" returnType="void" visibility="public">
+          <Argument type="String" name="receiver"/>
+        </Method>
+        <Method name="getReceiver" returnType="String" visibility="public"/>
+        <Method name="setBody" returnType="void" visibility="public">
+          <Argument type="String" name="body"/>
+        </Method>
+        <Method name="getBody" returnType="String" visibility="public"/>
+        <Method name="sentMail" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="User" package="wolfbits.user" visibility="public" xPosition="1820.0" yPosition="1220.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="surname" type="String" visibility="private"/>
+        <Field name="nickname" type="String" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+        <Field name="password" type="String" visibility="private"/>
+        <Field name="phone" type="String" visibility="private"/>
+        <Field name="petCapacity" type="int" visibility="private"/>
+        <Field name="userType" type="int" visibility="private"/>
+        <Field name="address" type="Address" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="alias"/>
+          <Argument type="String" name="email"/>
+          <Argument type="String" name="phone"/>
+          <Argument type="int" name="petCapacity"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getSurname" returnType="String" visibility="public"/>
+        <Method name="setSurname" returnType="void" visibility="public">
+          <Argument type="String" name="surname"/>
+        </Method>
+        <Method name="getNickname" returnType="String" visibility="public"/>
+        <Method name="setNickname" returnType="void" visibility="public">
+          <Argument type="String" name="nickname"/>
+        </Method>
+        <Method name="getPetCapacity" returnType="int" visibility="public"/>
+        <Method name="setPetCapacity" returnType="void" visibility="public">
+          <Argument type="int" name="petCapacity"/>
+        </Method>
+        <Method name="getEmail" returnType="String" visibility="public"/>
+        <Method name="setEmail" returnType="void" visibility="public">
+          <Argument type="String" name="email"/>
+        </Method>
+        <Method name="getPassword" returnType="String" visibility="public"/>
+        <Method name="setPassword" returnType="void" visibility="public">
+          <Argument type="String" name="password"/>
+        </Method>
+        <Method name="getPhone" returnType="String" visibility="public"/>
+        <Method name="setPhone" returnType="void" visibility="public">
+          <Argument type="String" name="phone"/>
+        </Method>
+        <Method name="getUserType" returnType="int" visibility="public"/>
+        <Method name="setUserType" returnType="void" visibility="public">
+          <Argument type="int" name="userType"/>
+        </Method>
+        <Method name="getAddress" returnType="Address" visibility="public"/>
+        <Method name="setAddress" returnType="void" visibility="public">
+          <Argument type="Address" name="address"/>
+        </Method>
+        <Method name="asignarRoles" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="UserManager" package="wolfbits.user" visibility="public" xPosition="2120.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="wolfbits.post.PostManager" target="wolfbits.post.Post" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="filterByEyeColour" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.FilterByEyeColour" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="wolfbits.post.filters.FilterByEyeColour" target="wolfbits.post.filters.AbstractFilter"/>
+    <UseRelation source="wolfbits.pet.PetManager" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.Comment" target="wolfbits.user.User" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.main.Dashboard" target="wolfbits.post.Post" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeAndLocalization" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.AndFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="wolfbits.post.filters.FilterByHairType" target="wolfbits.post.filters.AbstractFilter"/>
+    <HasRelation name="filterByColour1" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.FilterByColour1" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="andFilterByRace1Race2AndColour1" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.AndFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="comments" source="wolfbits.post.Post" target="wolfbits.post.Comment" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Comment&gt;"/>
+    <HasRelation name="race1" source="wolfbits.pet.Pet" target="wolfbits.pet.Race" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Colour" source="wolfbits.pet.Pet" target="wolfbits.pet.ColourPet" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;ColourPet&gt;"/>
+    <HasRelation name="filter1" source="wolfbits.post.filters.CompoundFilter" target="wolfbits.post.filters.AbstractFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="filterByLocalization" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.FilterByLocalization" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="race2" source="wolfbits.pet.Pet" target="wolfbits.pet.Race" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.pet.Pet" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="filter2" source="wolfbits.post.filters.CompoundFilter" target="wolfbits.post.filters.AbstractFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="andFilterByRace1AndRace2" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.AndFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.logins.LogIn" target="wolfbits.user.User" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="andFilterByRace1Race2Colour1AndColour2" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.AndFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="orFilterByRace1Race2Colour1AndColour2" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.OrFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="orFilterByRace1Race2Colour1Colour2AgeAndEyeColour" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.OrFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="puppet" source="wolfbits.main.Dashboard" target="wolfbits.pet.Pet" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Pet&gt;"/>
+    <HasRelation name="address" source="wolfbits.user.User" target="wolfbits.user.Address" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="owner" source="wolfbits.pet.Pet" target="wolfbits.user.User" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="filterByRace1" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.FilterByRace1" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationAndHairType" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.OrFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.filters.FilterByColour2" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pet" source="wolfbits.post.Post" target="wolfbits.pet.Pet" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.filters.FilterByRace1" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.Post" target="wolfbits.post.Comment" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.main.Dashboard" target="wolfbits.post.PostManager" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.Complaint" target="wolfbits.user.User" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.filters.FilterByLocalization" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="races" source="wolfbits.pet.Pet" target="wolfbits.pet.Race" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Race&gt;"/>
+    <UseRelation source="wolfbits.main.Dashboard" target="wolfbits.user.User" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="user" source="wolfbits.post.Post" target="wolfbits.user.User" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="wolfbits.post.filters.FilterByType" target="wolfbits.post.filters.AbstractFilter"/>
+    <UseRelation source="wolfbits.post.filters.FilterBySize" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="filterByType" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.FilterByType" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="andFilterResults" source="wolfbits.post.filters.FilterManager" target="wolfbits.pet.Pet" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Pet&gt;"/>
+    <UseRelation source="wolfbits.post.filters.FilterByAge" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="orFilterByRace1Race2Colour1Colour2AndAge" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.OrFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="filterByHairType" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.FilterByHairType" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.filters.CompoundFilter" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="andFilterByRace1Race2Colour1Colour2AgeAndEyeColour" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.AndFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.Post" target="wolfbits.user.User" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="orFilterByRace1Race2Colour1Colour2AgeEyeColourAndSize" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.OrFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.PostManager" target="wolfbits.user.User" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.main.Dashboard" target="wolfbits.pet.PetManager" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.filters.AndFilter" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.user.User" target="wolfbits.user.Address" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.PostManager" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.filters.FilterByRace2" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="users" source="wolfbits.main.Dashboard" target="wolfbits.user.User" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;User&gt;"/>
+    <UseRelation source="wolfbits.main.Dashboard" target="wolfbits.user.UserManager" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="wolfbits.post.filters.FilterByColour2" target="wolfbits.post.filters.AbstractFilter"/>
+    <UseRelation source="wolfbits.main.Dashboard" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="andFilterByRace1Race2Colour1Colour2AndAge" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.AndFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="puppetManager" source="wolfbits.main.Dashboard" target="wolfbits.pet.PetManager" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="filterByGender" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.FilterByGender" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.Post" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.logins.LogInManager" target="wolfbits.logins.LogIn" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="wolfbits.post.filters.FilterByRace1" target="wolfbits.post.filters.AbstractFilter"/>
+    <UseRelation source="wolfbits.post.filters.AbstractFilter" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="wolfbits.post.filters.FilterBySize" target="wolfbits.post.filters.AbstractFilter"/>
+    <UseRelation source="wolfbits.pet.Pet" target="wolfbits.user.User" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="user" source="wolfbits.post.Comment" target="wolfbits.user.User" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="orFilterByRace1AndRace2" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.OrFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="wolfbits.post.filters.FilterByRace2" target="wolfbits.post.filters.AbstractFilter"/>
+    <HasRelation name="post" source="wolfbits.main.Dashboard" target="wolfbits.post.Post" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Post&gt;"/>
+    <UseRelation source="wolfbits.post.filters.FilterByEyeColour" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="user" source="wolfbits.post.Complaint" target="wolfbits.user.User" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.filters.FilterByColour1" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.filters.FilterByGender" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="userManager" source="wolfbits.main.Dashboard" target="wolfbits.user.UserManager" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="orFilterResults" source="wolfbits.post.filters.FilterManager" target="wolfbits.pet.Pet" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Pet&gt;"/>
+    <HasRelation name="accusers" source="wolfbits.post.Post" target="wolfbits.user.User" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;User&gt;"/>
+    <UseRelation source="wolfbits.pet.Pet" target="wolfbits.pet.Race" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeAndLocalization" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.OrFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="wolfbits.post.filters.FilterByColour1" target="wolfbits.post.filters.AbstractFilter"/>
+    <UseRelation source="wolfbits.logins.LogInManager" target="wolfbits.user.Mail" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.filters.FilterByHairType" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.OrFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationAndHairType" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.AndFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="user" source="wolfbits.logins.LogIn" target="wolfbits.user.User" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="postManager" source="wolfbits.main.Dashboard" target="wolfbits.post.PostManager" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="wolfbits.post.filters.AndFilter" target="wolfbits.post.filters.CompoundFilter"/>
+    <HasRelation name="orFilterByRace1Race2AndColour1" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.OrFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="wolfbits.post.filters.FilterByLocalization" target="wolfbits.post.filters.AbstractFilter"/>
+    <HasRelation name="filterByAge" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.FilterByAge" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="keeper" source="wolfbits.pet.Pet" target="wolfbits.user.User" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="wolfbits.post.filters.FilterByType" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="colour1" source="wolfbits.pet.Pet" target="wolfbits.pet.ColourPet" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="wolfbits.post.filters.CompoundFilter" target="wolfbits.post.filters.AbstractFilter"/>
+    <IsRelation name="is" source="wolfbits.post.filters.FilterByAge" target="wolfbits.post.filters.AbstractFilter"/>
+    <HasRelation name="colour2" source="wolfbits.pet.Pet" target="wolfbits.pet.ColourPet" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="filterByTypeResults" source="wolfbits.post.filters.FilterManager" target="wolfbits.pet.Pet" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Pet&gt;"/>
+    <HasRelation name="filterByColour2" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.FilterByColour2" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="filterByRace2" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.FilterByRace2" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="filterBySize" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.FilterBySize" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.AndFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="wolfbits.post.filters.OrFilter" target="wolfbits.post.filters.CompoundFilter"/>
+    <UseRelation source="wolfbits.post.filters.OrFilter" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="wolfbits.post.filters.FilterByGender" target="wolfbits.post.filters.AbstractFilter"/>
+    <HasRelation name="andFilterByRace1Race2Colour1Colour2AgeEyeColourAndSize" source="wolfbits.post.filters.FilterManager" target="wolfbits.post.filters.AndFilter" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="logInList" source="wolfbits.logins.LogInManager" target="wolfbits.logins.LogIn" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;LogIn&gt;"/>
+    <UseRelation source="wolfbits.post.filters.FilterManager" target="wolfbits.pet.Pet" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
