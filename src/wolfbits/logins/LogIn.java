@@ -3,13 +3,13 @@ package wolfbits.logins;
 import java.util.Date;
 import wolfbits.user.User;
 
-public class Login {
+public class LogIn {
     private User user;
     private String password;
     boolean isLogued;
     Date LastActivity;
     
-    public Login(User user, String password){
+    public LogIn(User user, String password){
         
         this.user = user;
         this.password = password;
