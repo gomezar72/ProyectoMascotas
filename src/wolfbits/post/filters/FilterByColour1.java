@@ -1,7 +1,7 @@
 
 package wolfbits.post.filters;
 
-import wolfbits.pet.Pet;
+import wolfbits.post.Post;
 
 public class FilterByColour1  extends AbstractFilter{
     private String colour1;
@@ -12,8 +12,8 @@ public class FilterByColour1  extends AbstractFilter{
     }
     
     @Override
-    public boolean filter(Pet pet)
+    public boolean filter(Post post)
     {
-        return pet.getColour1().getName().equals(this.colour1);
+        return post.getPet().getColour1().getName().equals(this.colour1);
     }  
 }

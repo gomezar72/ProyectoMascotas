@@ -5,12 +5,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
 import wolfbits.pet.Pet;
+import wolfbits.post.Post;
 
 public class FilterManager {
        private FilterByType filterByType;
-       List <Pet> filterByTypeResults;
-       List <Pet> orFilterResults ;
-       List <Pet> andFilterResults;
+       List <Post> filterByTypeResults;
+       List <Post> orFilterResults ;
+       List <Post> andFilterResults;
        private FilterByRace1 filterByRace1;
        private FilterByRace2 filterByRace2;
        private FilterByColour1 filterByColour1;
@@ -113,36 +114,36 @@ public class FilterManager {
     
     }
     
-    public void filterByType(List <Pet> pets)
+    public void filterByType(List <Post> posts)
     {
        this.filterByTypeResults = new ArrayList<>();
       int counter = 0;
        
-       for (Pet pet : pets)
+       for (Post post : posts)
       {
-          if (this.filterByType.filter(pet))
+          if (this.filterByType.filter(post))
           {
-          this.filterByTypeResults.add(pet);
+          this.filterByTypeResults.add(post);
             counter += 1;
           }
       }
        System.out.println("Resultados filtro por tipo " + "(" + counter + ")" );
            
-      for (Pet result : this.filterByTypeResults )
+      for (Post result : this.filterByTypeResults )
       {
          System.out.println(result.toString());
     }
       
     }
     
-    public void orFilter (List <Pet> pets)
+    public void orFilter (List <Post> posts)
     {
          int counter = 0;
       
       this.orFilterResults = new ArrayList<>();
-      for (Pet pet : this.filterByTypeResults)
+      for (Post pet: this.filterByTypeResults)
       {
-          if (this.orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender.filter(pet))
+          if (this.orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender.filter(post))
           {
           this.orFilterResults.add(pet);
           counter += 1;
@@ -151,7 +152,7 @@ public class FilterManager {
       
       System.out.println("Resultados filtro OR: " + "( " +  counter + ")");
            
-      for (Pet result : orFilterResults)
+      for (Post result : orFilterResults)
       {
          System.out.println(result.toString());
       }
@@ -162,29 +163,29 @@ public class FilterManager {
        int counter = 0;
        this.andFilterResults = new ArrayList<>();
       
-       for (Pet pet : this.filterByTypeResults)
+       for (Post post : this.filterByTypeResults)
       {
-          if (this.andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender.filter(pet))
+          if (this.andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender.filter(post))
           {
-          this.andFilterResults.add(pet);
+          this.andFilterResults.add(post);
           counter += 1;
           }
       }
            
       System.out.println("Resultados filtro AND: " + "( " + counter + ")");
            
-      for (Pet result : this.andFilterResults)
+      for (Post result : this.andFilterResults)
       {
          System.out.println(result.toString());
     }
   }
     
-    public List<Pet> getOrResults()
+    public List<Post> getOrResults()
     {
         return this.orFilterResults;
     }
     
-    public List<Pet> getAndResults()
+    public List<Post> getAndResults()
     {
         return this.andFilterResults;
     }

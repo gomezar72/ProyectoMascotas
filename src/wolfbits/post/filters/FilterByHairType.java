@@ -1,7 +1,7 @@
 
 package wolfbits.post.filters;
 
-import wolfbits.pet.Pet;
+import wolfbits.post.Post;
 
 public class FilterByHairType extends AbstractFilter{
     private String hairType;
@@ -12,8 +12,8 @@ public class FilterByHairType extends AbstractFilter{
     }
     
     @Override
-    public boolean filter(Pet pet)
+    public boolean filter(Post post)
     {
-        return pet.getHairType().equals(this.hairType);
+        return post.getPet().getHairType().equals(this.hairType);
     }  
 }

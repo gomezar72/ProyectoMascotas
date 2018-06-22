@@ -1,7 +1,7 @@
 
 package wolfbits.post.filters;
 
-import wolfbits.pet.Pet;
+import wolfbits.post.Post;
 
 public class FilterByAge extends AbstractFilter{
     private String age;
@@ -12,9 +12,9 @@ public class FilterByAge extends AbstractFilter{
     }
     
     @Override
-    public boolean filter(Pet pet)
+    public boolean filter(Post post)
     {
-        return pet.getAge().equals(this.age);
+        return post.getPet().getAge().equals(this.age);
     }  
 
 }

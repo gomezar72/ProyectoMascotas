@@ -1,7 +1,7 @@
 
 package wolfbits.post.filters;
 
-import wolfbits.pet.Pet;
+import wolfbits.post.Post;
 
 public class FilterBySize extends AbstractFilter {
     private String size;
@@ -12,8 +12,8 @@ public class FilterBySize extends AbstractFilter {
     }
     
     @Override
-    public boolean filter(Pet pet)
+    public boolean filter(Post post)
     {
-        return pet.getSize().equals(this.size);
+        return post.getPet().getSize().equals(this.size);
     }  
 }

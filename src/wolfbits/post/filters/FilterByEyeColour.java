@@ -1,7 +1,8 @@
 
 package wolfbits.post.filters;
 
-import wolfbits.pet.Pet;
+import wolfbits.post.Post;
+
 
 public class FilterByEyeColour extends AbstractFilter{
     private String eyeColour;
@@ -12,8 +13,8 @@ public class FilterByEyeColour extends AbstractFilter{
     }
     
     @Override
-    public boolean filter(Pet pet)
+    public boolean filter(Post post)
     {
-        return pet.getEyeColour().equals(this.eyeColour);
+        return post.getPet().getEyeColour().equals(this.eyeColour);
     }  
 }

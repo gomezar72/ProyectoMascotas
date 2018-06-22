@@ -1,7 +1,8 @@
 
 package wolfbits.post.filters;
 
-import wolfbits.pet.Pet;
+import wolfbits.post.Post;
+
 
 public class OrFilter  extends CompoundFilter{
 
@@ -9,9 +10,9 @@ public class OrFilter  extends CompoundFilter{
         super(filter1, filter2);
     }
     @Override
-    public boolean filter (Pet pet)
+    public boolean filter (Post post)
     {
-        return super.filter1.filter(pet) || super.filter2.filter(pet);
+        return super.filter1.filter(post) || super.filter2.filter(post);
     }
     
 }

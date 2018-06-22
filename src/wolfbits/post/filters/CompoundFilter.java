@@ -1,7 +1,7 @@
 
 package wolfbits.post.filters;
 
-import wolfbits.pet.Pet;
+import wolfbits.post.Post;
 
 public abstract class CompoundFilter extends AbstractFilter{
     protected AbstractFilter filter1;
@@ -19,6 +19,6 @@ public abstract class CompoundFilter extends AbstractFilter{
      * @return
      */
     @Override
-    public abstract boolean filter (Pet pet);
+    public abstract boolean filter (Post post);
     
 }

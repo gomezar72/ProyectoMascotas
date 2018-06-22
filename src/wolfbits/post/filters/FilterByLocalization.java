@@ -1,7 +1,7 @@
 
 package wolfbits.post.filters;
 
-import wolfbits.pet.Pet;
+import wolfbits.post.Post;
 
 public class FilterByLocalization extends AbstractFilter{
     private String localization;
@@ -12,8 +12,8 @@ public class FilterByLocalization extends AbstractFilter{
     }
     
     @Override
-    public boolean filter(Pet pet)
+    public boolean filter(Post post)
     {
-        return pet.getLocalization().equals(this.localization);
+        return post.getPet().getLocalization().equals(this.localization);
     }  
 }
