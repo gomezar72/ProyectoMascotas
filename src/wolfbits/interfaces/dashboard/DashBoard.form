@@ -1,0 +1,1884 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="cc" green="ff" red="ff" type="rgb"/>
+    </Property>
+    <Property name="iconImage" type="java.awt.Image" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <Connection component="Form" name="iconImage" type="property"/>
+    </Property>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <SerializedValue value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,4,-80,0,0,6,64"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="panelPost1" min="-2" pref="473" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="panelPost2" min="-2" pref="473" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="panelPost3" min="-2" pref="473" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="panelPost4" min="-2" pref="473" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="1196" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="panelPost4" pref="331" max="32767" attributes="0"/>
+                  <Component id="panelPost2" pref="331" max="32767" attributes="0"/>
+                  <Component id="panelPost1" pref="331" max="32767" attributes="0"/>
+                  <Component id="panelPost3" alignment="0" pref="331" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="66" red="66" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+            <MatteColorBorder bottom="4" left="4" right="4" top="4"/>
+          </Border>
+        </Property>
+        <Property name="autoscrolls" type="boolean" value="true"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor Por defecto"/>
+        </Property>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="PanelFiltros"/>
+      </AccessibilityProperties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="79" pref="79" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="label3" min="-2" pref="828" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="jLabelRazaPerro3" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                                                      <Component id="comboRaza3Perro" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                                                      <Component id="jLabelRazaPerro1" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                                                      <Component id="comboRaza2Perro" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="1" attributes="0">
+                                                      <Component id="comboRaza3Gato" min="-2" pref="265" max="-2" attributes="0"/>
+                                                      <Component id="jLabelRazaGato2" alignment="1" min="-2" pref="265" max="-2" attributes="0"/>
+                                                      <Component id="jLabelRazaGato1" alignment="1" min="-2" pref="265" max="-2" attributes="0"/>
+                                                      <Component id="comboRaza1Gato" alignment="1" min="-2" pref="265" max="-2" attributes="0"/>
+                                                      <Component id="comboRaza2Gato" alignment="1" min="-2" pref="265" max="-2" attributes="0"/>
+                                                      <Component id="jLabelRazaGato3" alignment="1" min="-2" pref="265" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Component id="comboRaza1Perro" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                                              <Component id="jLabelRazaPerro2" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Group type="102" attributes="0">
+                                                          <Component id="jLabelColor3" min="-2" pref="265" max="-2" attributes="0"/>
+                                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" attributes="0">
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="comboColor1" alignment="0" min="-2" pref="265" max="-2" attributes="0"/>
+                                                              <Component id="jLabelColor2" alignment="0" min="-2" pref="265" max="-2" attributes="0"/>
+                                                              <Component id="comboColor2" alignment="0" min="-2" pref="265" max="-2" attributes="0"/>
+                                                              <Component id="comboColor3" min="-2" pref="265" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <EmptySpace max="32767" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                                                  <Component id="jLabelColor1" min="-2" pref="265" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="148" max="-2" attributes="0"/>
+                                  <Component id="jLabel7" min="-2" pref="786" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="jLabelFotoPatitas" min="-2" pref="238" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jButton4" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+                                  <Component id="jRadioButton1" min="-2" pref="181" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="1114" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButton2" min="-2" pref="188" max="-2" attributes="0"/>
+                              <Component id="jRadioButton4" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jLabel8" min="-2" pref="336" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jButton3" min="-2" pref="197" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                  <Component id="jButton1" min="-2" pref="136" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                                  <Component id="jLabelUltimosPosts" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="24" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jButton5" alignment="0" min="-2" pref="127" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jButton6" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="jButton7" min="-2" pref="60" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jButton3" alignment="3" min="-2" pref="53" max="-2" attributes="0"/>
+                                      <Component id="jButton1" alignment="3" min="-2" pref="53" max="-2" attributes="0"/>
+                                      <Component id="jButton5" alignment="3" min="-2" pref="53" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel7" min="-2" pref="93" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="label3" min="-2" pref="95" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="jLabelRazaGato1" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
+                                              <Component id="jLabelColor1" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                                          <Component id="jLabelRazaPerro1" min="-2" pref="46" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="comboRaza1Perro" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="comboRaza1Gato" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                                          <Component id="comboColor1" alignment="0" min="-2" pref="45" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton4" min="-2" pref="109" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="jLabelFotoPatitas" min="-2" pref="166" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabelRazaPerro2" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
+                          <Component id="jLabelRazaGato2" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jLabelColor2" alignment="0" min="-2" pref="46" max="-2" attributes="0"/>
+                      <Component id="jRadioButton1" alignment="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="comboRaza2Perro" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                              <Component id="comboRaza2Gato" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="jRadioButton4" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="comboColor2" alignment="1" min="-2" pref="45" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabelColor3" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
+                              <Component id="jLabelRazaGato3" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
+                              <Component id="jLabelRazaPerro3" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="comboRaza3Perro" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                              <Component id="comboRaza3Gato" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                              <Component id="comboColor3" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                          <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Component id="jButton2" min="-2" pref="68" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace pref="39" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jButton6" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jButton7" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jLabelUltimosPosts" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JComboBox" name="comboRaza1Perro">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="162">
+                <StringItem index="0" value="Affenpinscher"/>
+                <StringItem index="1" value="Airedale terrier"/>
+                <StringItem index="2" value="Akita Americano"/>
+                <StringItem index="3" value="Akita Inu"/>
+                <StringItem index="4" value="Alano espa&#xf1;ol"/>
+                <StringItem index="5" value="Alaskan malamute"/>
+                <StringItem index="6" value="American Hairless terrier"/>
+                <StringItem index="7" value="American Staffordshire Terrier"/>
+                <StringItem index="8" value="Antiguo Perro Pastor Ingl&#xe9;s"/>
+                <StringItem index="9" value="B&#xf3;xer"/>
+                <StringItem index="10" value="Bardino (Perro majorero)"/>
+                <StringItem index="11" value="Basenji"/>
+                <StringItem index="12" value="Basset hound"/>
+                <StringItem index="13" value="Beagle"/>
+                <StringItem index="14" value="Beauceron"/>
+                <StringItem index="15" value="Bich&#xf3;n malt&#xe9;s"/>
+                <StringItem index="16" value="Bichon fris&#xe9;"/>
+                <StringItem index="17" value="Bloodhound"/>
+                <StringItem index="18" value="Border collie"/>
+                <StringItem index="19" value="Borzoi"/>
+                <StringItem index="20" value="Boston terrier"/>
+                <StringItem index="21" value="Braco alem&#xe1;n de pelo corto"/>
+                <StringItem index="22" value="Braco alem&#xe1;n de pelo duro"/>
+                <StringItem index="23" value="Braco de Auvernia"/>
+                <StringItem index="24" value="Braco de Saint Germain"/>
+                <StringItem index="25" value="Braco de Weimar"/>
+                <StringItem index="26" value="Braco franc&#xe9;s"/>
+                <StringItem index="27" value="Braco h&#xfa;ngaro"/>
+                <StringItem index="28" value="Braco italiano"/>
+                <StringItem index="29" value="Braco tirol&#xe9;s"/>
+                <StringItem index="30" value="Bull Terrier"/>
+                <StringItem index="31" value="Bulldog americano"/>
+                <StringItem index="32" value="Bulldog franc&#xe9;s"/>
+                <StringItem index="33" value="Bulldog ingl&#xe9;s"/>
+                <StringItem index="34" value="Bullmastiff"/>
+                <StringItem index="35" value="C&#xe3;o da Serra da Estrela"/>
+                <StringItem index="36" value="C&#xe3;o da Serra de Aires"/>
+                <StringItem index="37" value="C&#xe3;o de Agua Portugu&#xea;s"/>
+                <StringItem index="38" value="C&#xe3;o de Castro Laboreiro"/>
+                <StringItem index="39" value="C&#xe3;o de Fila de S&#xe3;o Miguel"/>
+                <StringItem index="40" value="Can de palleiro"/>
+                <StringItem index="41" value="Caniche"/>
+                <StringItem index="42" value="Chihuahue&#xf1;o"/>
+                <StringItem index="43" value="Chow chow"/>
+                <StringItem index="44" value="Clumber spaniel"/>
+                <StringItem index="45" value="Cocker spaniel americano"/>
+                <StringItem index="46" value="Cocker spaniel ingl&#xe9;s"/>
+                <StringItem index="47" value="Collie"/>
+                <StringItem index="48" value="Collie barbudo"/>
+                <StringItem index="49" value="Crestado Chino"/>
+                <StringItem index="50" value="D&#xe1;lmata"/>
+                <StringItem index="51" value="Dachshund"/>
+                <StringItem index="52" value="Dobermann"/>
+                <StringItem index="53" value="Dogo argentino"/>
+                <StringItem index="54" value="Dogo de burdeos"/>
+                <StringItem index="55" value="Dogo guatemalteco"/>
+                <StringItem index="56" value="Epagneul papill&#xf3;n"/>
+                <StringItem index="57" value="Flat-Coated Retriever"/>
+                <StringItem index="58" value="Fox Terrier"/>
+                <StringItem index="59" value="Galgo espa&#xf1;ol"/>
+                <StringItem index="60" value="Galgo h&#xfa;ngaro"/>
+                <StringItem index="61" value="Galgo ingl&#xe9;s"/>
+                <StringItem index="62" value="Galgo italiano"/>
+                <StringItem index="63" value="Gegar colombiano"/>
+                <StringItem index="64" value="Golden retriever"/>
+                <StringItem index="65" value="Gran dan&#xe9;s"/>
+                <StringItem index="66" value="Greyhound"/>
+                <StringItem index="67" value="Grif&#xf3;n belga"/>
+                <StringItem index="68" value="Husky siberiano"/>
+                <StringItem index="69" value="Jack Russell Terrier"/>
+                <StringItem index="70" value="Keeshond"/>
+                <StringItem index="71" value="Kerry blue terrier"/>
+                <StringItem index="72" value="Komondor"/>
+                <StringItem index="73" value="Kuvasz"/>
+                <StringItem index="74" value="Labrador"/>
+                <StringItem index="75" value="Lebrel afgano"/>
+                <StringItem index="76" value="Lhasa apso"/>
+                <StringItem index="77" value="Lobo de saarloos"/>
+                <StringItem index="78" value="Malt&#xe9;s"/>
+                <StringItem index="79" value="Manchester terrier"/>
+                <StringItem index="80" value="Mast&#xed;n afgano"/>
+                <StringItem index="81" value="Mast&#xed;n del Pirineo"/>
+                <StringItem index="82" value="Mast&#xed;n espa&#xf1;ol"/>
+                <StringItem index="83" value="Mast&#xed;n ingl&#xe9;s"/>
+                <StringItem index="84" value="Mast&#xed;n napolitano"/>
+                <StringItem index="85" value="Mast&#xed;n tibetano"/>
+                <StringItem index="86" value="Mucuchies"/>
+                <StringItem index="87" value="Ovejero magall&#xe1;nico"/>
+                <StringItem index="88" value="Pastor alem&#xe1;n"/>
+                <StringItem index="89" value="Pastor belga"/>
+                <StringItem index="90" value="Pastor blanco suizo"/>
+                <StringItem index="91" value="Pastor catal&#xe1;n"/>
+                <StringItem index="92" value="Pastor croata"/>
+                <StringItem index="93" value="Pastor de los Pirineos"/>
+                <StringItem index="94" value="Pastor garafiano"/>
+                <StringItem index="95" value="Pastor holand&#xe9;s"/>
+                <StringItem index="96" value="Pastor leon&#xe9;s"/>
+                <StringItem index="97" value="Pastor mallorqu&#xed;n"/>
+                <StringItem index="98" value="Pastor peruano Chiribaya"/>
+                <StringItem index="99" value="Pastor vasco"/>
+                <StringItem index="100" value="Pekin&#xe9;s"/>
+                <StringItem index="101" value="Pembroke Welsh Corgi"/>
+                <StringItem index="102" value="Peque&#xf1;o Lebrel Italiano"/>
+                <StringItem index="103" value="Perdiguero franc&#xe9;s"/>
+                <StringItem index="104" value="Perdiguero portugu&#xe9;s"/>
+                <StringItem index="105" value="Perro cimarr&#xf3;n uruguayo"/>
+                <StringItem index="106" value="Perro de agua americano"/>
+                <StringItem index="107" value="Perro de agua espa&#xf1;ol"/>
+                <StringItem index="108" value="Perro de agua irland&#xe9;s"/>
+                <StringItem index="109" value="Perro de agua portugu&#xe9;s"/>
+                <StringItem index="110" value="Perro de Monta&#xf1;a de los Pirineos"/>
+                <StringItem index="111" value="Perro dogo mallorqu&#xed;n"/>
+                <StringItem index="112" value="Perro esquimal canadiense"/>
+                <StringItem index="113" value="Perro pastor de las islas Shetland"/>
+                <StringItem index="114" value="Perro peruano sin pelo"/>
+                <StringItem index="115" value="Phal&#xe8;ne"/>
+                <StringItem index="116" value="Pinscher alem&#xe1;n"/>
+                <StringItem index="117" value="Pinscher miniatura"/>
+                <StringItem index="118" value="Pitbull"/>
+                <StringItem index="119" value="Podenco canario"/>
+                <StringItem index="120" value="Podenco ibicenco"/>
+                <StringItem index="121" value="Podenco portugu&#xe9;s"/>
+                <StringItem index="122" value="Pointer"/>
+                <StringItem index="123" value="Pomerania"/>
+                <StringItem index="124" value="Presa canario"/>
+                <StringItem index="125" value="Pug"/>
+                <StringItem index="126" value="Puli"/>
+                <StringItem index="127" value="Rafeiro do Alentejo"/>
+                <StringItem index="128" value="Ratonero bodeguero andaluz"/>
+                <StringItem index="129" value="Ratonero mallorqu&#xed;n"/>
+                <StringItem index="130" value="Ratonero valenciano"/>
+                <StringItem index="131" value="Rhodesian Ridgeback"/>
+                <StringItem index="132" value="Rottweiler"/>
+                <StringItem index="133" value="Saluki"/>
+                <StringItem index="134" value="Samoyedo"/>
+                <StringItem index="135" value="San Bernardo"/>
+                <StringItem index="136" value="Sato"/>
+                <StringItem index="137" value="Schnauzer est&#xe1;ndar"/>
+                <StringItem index="138" value="Schnauzer gigante"/>
+                <StringItem index="139" value="Schnauzer miniatura"/>
+                <StringItem index="140" value="Setter ingl&#xe9;s"/>
+                <StringItem index="141" value="Setter irland&#xe9;s"/>
+                <StringItem index="142" value="Shar Pei"/>
+                <StringItem index="143" value="Shiba Inu"/>
+                <StringItem index="144" value="Shih Tzu"/>
+                <StringItem index="145" value="Siberian husky"/>
+                <StringItem index="146" value="Skye terrier"/>
+                <StringItem index="147" value="Sussex spaniel"/>
+                <StringItem index="148" value="Terranova"/>
+                <StringItem index="149" value="Terrier alem&#xe1;n"/>
+                <StringItem index="150" value="Terrier australiano"/>
+                <StringItem index="151" value="Terrier brasile&#xf1;o"/>
+                <StringItem index="152" value="Terrier chileno"/>
+                <StringItem index="153" value="Terrier escoc&#xe9;s"/>
+                <StringItem index="154" value="Terrier gal&#xe9;s"/>
+                <StringItem index="155" value="Terrier irland&#xe9;s"/>
+                <StringItem index="156" value="Weimaraner"/>
+                <StringItem index="157" value="West Highland White Terrier"/>
+                <StringItem index="158" value="Whippet"/>
+                <StringItem index="159" value="Xoloitzcuintle"/>
+                <StringItem index="160" value="Yorkshire terrier"/>
+                <StringItem index="161" value=" "/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="comboPerro1"/>
+          </AccessibilityProperties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboRaza1PerroActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="comboRaza2Perro">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="162">
+                <StringItem index="0" value="Affenpinscher"/>
+                <StringItem index="1" value="Airedale terrier"/>
+                <StringItem index="2" value="Akita Americano"/>
+                <StringItem index="3" value="Akita Inu"/>
+                <StringItem index="4" value="Alano espa&#xf1;ol"/>
+                <StringItem index="5" value="Alaskan malamute"/>
+                <StringItem index="6" value="American Hairless terrier"/>
+                <StringItem index="7" value="American Staffordshire Terrier"/>
+                <StringItem index="8" value="Antiguo Perro Pastor Ingl&#xe9;s"/>
+                <StringItem index="9" value="B&#xf3;xer"/>
+                <StringItem index="10" value="Bardino (Perro majorero)"/>
+                <StringItem index="11" value="Basenji"/>
+                <StringItem index="12" value="Basset hound"/>
+                <StringItem index="13" value="Beagle"/>
+                <StringItem index="14" value="Beauceron"/>
+                <StringItem index="15" value="Bich&#xf3;n malt&#xe9;s"/>
+                <StringItem index="16" value="Bichon fris&#xe9;"/>
+                <StringItem index="17" value="Bloodhound"/>
+                <StringItem index="18" value="Border collie"/>
+                <StringItem index="19" value="Borzoi"/>
+                <StringItem index="20" value="Boston terrier"/>
+                <StringItem index="21" value="Braco alem&#xe1;n de pelo corto"/>
+                <StringItem index="22" value="Braco alem&#xe1;n de pelo duro"/>
+                <StringItem index="23" value="Braco de Auvernia"/>
+                <StringItem index="24" value="Braco de Saint Germain"/>
+                <StringItem index="25" value="Braco de Weimar"/>
+                <StringItem index="26" value="Braco franc&#xe9;s"/>
+                <StringItem index="27" value="Braco h&#xfa;ngaro"/>
+                <StringItem index="28" value="Braco italiano"/>
+                <StringItem index="29" value="Braco tirol&#xe9;s"/>
+                <StringItem index="30" value="Bull Terrier"/>
+                <StringItem index="31" value="Bulldog americano"/>
+                <StringItem index="32" value="Bulldog franc&#xe9;s"/>
+                <StringItem index="33" value="Bulldog ingl&#xe9;s"/>
+                <StringItem index="34" value="Bullmastiff"/>
+                <StringItem index="35" value="C&#xe3;o da Serra da Estrela"/>
+                <StringItem index="36" value="C&#xe3;o da Serra de Aires"/>
+                <StringItem index="37" value="C&#xe3;o de Agua Portugu&#xea;s"/>
+                <StringItem index="38" value="C&#xe3;o de Castro Laboreiro"/>
+                <StringItem index="39" value="C&#xe3;o de Fila de S&#xe3;o Miguel"/>
+                <StringItem index="40" value="Can de palleiro"/>
+                <StringItem index="41" value="Caniche"/>
+                <StringItem index="42" value="Chihuahue&#xf1;o"/>
+                <StringItem index="43" value="Chow chow"/>
+                <StringItem index="44" value="Clumber spaniel"/>
+                <StringItem index="45" value="Cocker spaniel americano"/>
+                <StringItem index="46" value="Cocker spaniel ingl&#xe9;s"/>
+                <StringItem index="47" value="Collie"/>
+                <StringItem index="48" value="Collie barbudo"/>
+                <StringItem index="49" value="Crestado Chino"/>
+                <StringItem index="50" value="D&#xe1;lmata"/>
+                <StringItem index="51" value="Dachshund"/>
+                <StringItem index="52" value="Dobermann"/>
+                <StringItem index="53" value="Dogo argentino"/>
+                <StringItem index="54" value="Dogo de burdeos"/>
+                <StringItem index="55" value="Dogo guatemalteco"/>
+                <StringItem index="56" value="Epagneul papill&#xf3;n"/>
+                <StringItem index="57" value="Flat-Coated Retriever"/>
+                <StringItem index="58" value="Fox Terrier"/>
+                <StringItem index="59" value="Galgo espa&#xf1;ol"/>
+                <StringItem index="60" value="Galgo h&#xfa;ngaro"/>
+                <StringItem index="61" value="Galgo ingl&#xe9;s"/>
+                <StringItem index="62" value="Galgo italiano"/>
+                <StringItem index="63" value="Gegar colombiano"/>
+                <StringItem index="64" value="Golden retriever"/>
+                <StringItem index="65" value="Gran dan&#xe9;s"/>
+                <StringItem index="66" value="Greyhound"/>
+                <StringItem index="67" value="Grif&#xf3;n belga"/>
+                <StringItem index="68" value="Husky siberiano"/>
+                <StringItem index="69" value="Jack Russell Terrier"/>
+                <StringItem index="70" value="Keeshond"/>
+                <StringItem index="71" value="Kerry blue terrier"/>
+                <StringItem index="72" value="Komondor"/>
+                <StringItem index="73" value="Kuvasz"/>
+                <StringItem index="74" value="Labrador"/>
+                <StringItem index="75" value="Lebrel afgano"/>
+                <StringItem index="76" value="Lhasa apso"/>
+                <StringItem index="77" value="Lobo de saarloos"/>
+                <StringItem index="78" value="Malt&#xe9;s"/>
+                <StringItem index="79" value="Manchester terrier"/>
+                <StringItem index="80" value="Mast&#xed;n afgano"/>
+                <StringItem index="81" value="Mast&#xed;n del Pirineo"/>
+                <StringItem index="82" value="Mast&#xed;n espa&#xf1;ol"/>
+                <StringItem index="83" value="Mast&#xed;n ingl&#xe9;s"/>
+                <StringItem index="84" value="Mast&#xed;n napolitano"/>
+                <StringItem index="85" value="Mast&#xed;n tibetano"/>
+                <StringItem index="86" value="Mucuchies"/>
+                <StringItem index="87" value="Ovejero magall&#xe1;nico"/>
+                <StringItem index="88" value="Pastor alem&#xe1;n"/>
+                <StringItem index="89" value="Pastor belga"/>
+                <StringItem index="90" value="Pastor blanco suizo"/>
+                <StringItem index="91" value="Pastor catal&#xe1;n"/>
+                <StringItem index="92" value="Pastor croata"/>
+                <StringItem index="93" value="Pastor de los Pirineos"/>
+                <StringItem index="94" value="Pastor garafiano"/>
+                <StringItem index="95" value="Pastor holand&#xe9;s"/>
+                <StringItem index="96" value="Pastor leon&#xe9;s"/>
+                <StringItem index="97" value="Pastor mallorqu&#xed;n"/>
+                <StringItem index="98" value="Pastor peruano Chiribaya"/>
+                <StringItem index="99" value="Pastor vasco"/>
+                <StringItem index="100" value="Pekin&#xe9;s"/>
+                <StringItem index="101" value="Pembroke Welsh Corgi"/>
+                <StringItem index="102" value="Peque&#xf1;o Lebrel Italiano"/>
+                <StringItem index="103" value="Perdiguero franc&#xe9;s"/>
+                <StringItem index="104" value="Perdiguero portugu&#xe9;s"/>
+                <StringItem index="105" value="Perro cimarr&#xf3;n uruguayo"/>
+                <StringItem index="106" value="Perro de agua americano"/>
+                <StringItem index="107" value="Perro de agua espa&#xf1;ol"/>
+                <StringItem index="108" value="Perro de agua irland&#xe9;s"/>
+                <StringItem index="109" value="Perro de agua portugu&#xe9;s"/>
+                <StringItem index="110" value="Perro de Monta&#xf1;a de los Pirineos"/>
+                <StringItem index="111" value="Perro dogo mallorqu&#xed;n"/>
+                <StringItem index="112" value="Perro esquimal canadiense"/>
+                <StringItem index="113" value="Perro pastor de las islas Shetland"/>
+                <StringItem index="114" value="Perro peruano sin pelo"/>
+                <StringItem index="115" value="Phal&#xe8;ne"/>
+                <StringItem index="116" value="Pinscher alem&#xe1;n"/>
+                <StringItem index="117" value="Pinscher miniatura"/>
+                <StringItem index="118" value="Pitbull"/>
+                <StringItem index="119" value="Podenco canario"/>
+                <StringItem index="120" value="Podenco ibicenco"/>
+                <StringItem index="121" value="Podenco portugu&#xe9;s"/>
+                <StringItem index="122" value="Pointer"/>
+                <StringItem index="123" value="Pomerania"/>
+                <StringItem index="124" value="Presa canario"/>
+                <StringItem index="125" value="Pug"/>
+                <StringItem index="126" value="Puli"/>
+                <StringItem index="127" value="Rafeiro do Alentejo"/>
+                <StringItem index="128" value="Ratonero bodeguero andaluz"/>
+                <StringItem index="129" value="Ratonero mallorqu&#xed;n"/>
+                <StringItem index="130" value="Ratonero valenciano"/>
+                <StringItem index="131" value="Rhodesian Ridgeback"/>
+                <StringItem index="132" value="Rottweiler"/>
+                <StringItem index="133" value="Saluki"/>
+                <StringItem index="134" value="Samoyedo"/>
+                <StringItem index="135" value="San Bernardo"/>
+                <StringItem index="136" value="Sato"/>
+                <StringItem index="137" value="Schnauzer est&#xe1;ndar"/>
+                <StringItem index="138" value="Schnauzer gigante"/>
+                <StringItem index="139" value="Schnauzer miniatura"/>
+                <StringItem index="140" value="Setter ingl&#xe9;s"/>
+                <StringItem index="141" value="Setter irland&#xe9;s"/>
+                <StringItem index="142" value="Shar Pei"/>
+                <StringItem index="143" value="Shiba Inu"/>
+                <StringItem index="144" value="Shih Tzu"/>
+                <StringItem index="145" value="Siberian husky"/>
+                <StringItem index="146" value="Skye terrier"/>
+                <StringItem index="147" value="Sussex spaniel"/>
+                <StringItem index="148" value="Terranova"/>
+                <StringItem index="149" value="Terrier alem&#xe1;n"/>
+                <StringItem index="150" value="Terrier australiano"/>
+                <StringItem index="151" value="Terrier brasile&#xf1;o"/>
+                <StringItem index="152" value="Terrier chileno"/>
+                <StringItem index="153" value="Terrier escoc&#xe9;s"/>
+                <StringItem index="154" value="Terrier gal&#xe9;s"/>
+                <StringItem index="155" value="Terrier irland&#xe9;s"/>
+                <StringItem index="156" value="Weimaraner"/>
+                <StringItem index="157" value="West Highland White Terrier"/>
+                <StringItem index="158" value="Whippet"/>
+                <StringItem index="159" value="Xoloitzcuintle"/>
+                <StringItem index="160" value="Yorkshire terrier"/>
+                <StringItem index="161" value=" "/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="comboPerro2"/>
+          </AccessibilityProperties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="comboRaza3Perro">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="162">
+                <StringItem index="0" value="Affenpinscher"/>
+                <StringItem index="1" value="Airedale terrier"/>
+                <StringItem index="2" value="Akita Americano"/>
+                <StringItem index="3" value="Akita Inu"/>
+                <StringItem index="4" value="Alano espa&#xf1;ol"/>
+                <StringItem index="5" value="Alaskan malamute"/>
+                <StringItem index="6" value="American Hairless terrier"/>
+                <StringItem index="7" value="American Staffordshire Terrier"/>
+                <StringItem index="8" value="Antiguo Perro Pastor Ingl&#xe9;s"/>
+                <StringItem index="9" value="B&#xf3;xer"/>
+                <StringItem index="10" value="Bardino (Perro majorero)"/>
+                <StringItem index="11" value="Basenji"/>
+                <StringItem index="12" value="Basset hound"/>
+                <StringItem index="13" value="Beagle"/>
+                <StringItem index="14" value="Beauceron"/>
+                <StringItem index="15" value="Bich&#xf3;n malt&#xe9;s"/>
+                <StringItem index="16" value="Bichon fris&#xe9;"/>
+                <StringItem index="17" value="Bloodhound"/>
+                <StringItem index="18" value="Border collie"/>
+                <StringItem index="19" value="Borzoi"/>
+                <StringItem index="20" value="Boston terrier"/>
+                <StringItem index="21" value="Braco alem&#xe1;n de pelo corto"/>
+                <StringItem index="22" value="Braco alem&#xe1;n de pelo duro"/>
+                <StringItem index="23" value="Braco de Auvernia"/>
+                <StringItem index="24" value="Braco de Saint Germain"/>
+                <StringItem index="25" value="Braco de Weimar"/>
+                <StringItem index="26" value="Braco franc&#xe9;s"/>
+                <StringItem index="27" value="Braco h&#xfa;ngaro"/>
+                <StringItem index="28" value="Braco italiano"/>
+                <StringItem index="29" value="Braco tirol&#xe9;s"/>
+                <StringItem index="30" value="Bull Terrier"/>
+                <StringItem index="31" value="Bulldog americano"/>
+                <StringItem index="32" value="Bulldog franc&#xe9;s"/>
+                <StringItem index="33" value="Bulldog ingl&#xe9;s"/>
+                <StringItem index="34" value="Bullmastiff"/>
+                <StringItem index="35" value="C&#xe3;o da Serra da Estrela"/>
+                <StringItem index="36" value="C&#xe3;o da Serra de Aires"/>
+                <StringItem index="37" value="C&#xe3;o de Agua Portugu&#xea;s"/>
+                <StringItem index="38" value="C&#xe3;o de Castro Laboreiro"/>
+                <StringItem index="39" value="C&#xe3;o de Fila de S&#xe3;o Miguel"/>
+                <StringItem index="40" value="Can de palleiro"/>
+                <StringItem index="41" value="Caniche"/>
+                <StringItem index="42" value="Chihuahue&#xf1;o"/>
+                <StringItem index="43" value="Chow chow"/>
+                <StringItem index="44" value="Clumber spaniel"/>
+                <StringItem index="45" value="Cocker spaniel americano"/>
+                <StringItem index="46" value="Cocker spaniel ingl&#xe9;s"/>
+                <StringItem index="47" value="Collie"/>
+                <StringItem index="48" value="Collie barbudo"/>
+                <StringItem index="49" value="Crestado Chino"/>
+                <StringItem index="50" value="D&#xe1;lmata"/>
+                <StringItem index="51" value="Dachshund"/>
+                <StringItem index="52" value="Dobermann"/>
+                <StringItem index="53" value="Dogo argentino"/>
+                <StringItem index="54" value="Dogo de burdeos"/>
+                <StringItem index="55" value="Dogo guatemalteco"/>
+                <StringItem index="56" value="Epagneul papill&#xf3;n"/>
+                <StringItem index="57" value="Flat-Coated Retriever"/>
+                <StringItem index="58" value="Fox Terrier"/>
+                <StringItem index="59" value="Galgo espa&#xf1;ol"/>
+                <StringItem index="60" value="Galgo h&#xfa;ngaro"/>
+                <StringItem index="61" value="Galgo ingl&#xe9;s"/>
+                <StringItem index="62" value="Galgo italiano"/>
+                <StringItem index="63" value="Gegar colombiano"/>
+                <StringItem index="64" value="Golden retriever"/>
+                <StringItem index="65" value="Gran dan&#xe9;s"/>
+                <StringItem index="66" value="Greyhound"/>
+                <StringItem index="67" value="Grif&#xf3;n belga"/>
+                <StringItem index="68" value="Husky siberiano"/>
+                <StringItem index="69" value="Jack Russell Terrier"/>
+                <StringItem index="70" value="Keeshond"/>
+                <StringItem index="71" value="Kerry blue terrier"/>
+                <StringItem index="72" value="Komondor"/>
+                <StringItem index="73" value="Kuvasz"/>
+                <StringItem index="74" value="Labrador"/>
+                <StringItem index="75" value="Lebrel afgano"/>
+                <StringItem index="76" value="Lhasa apso"/>
+                <StringItem index="77" value="Lobo de saarloos"/>
+                <StringItem index="78" value="Malt&#xe9;s"/>
+                <StringItem index="79" value="Manchester terrier"/>
+                <StringItem index="80" value="Mast&#xed;n afgano"/>
+                <StringItem index="81" value="Mast&#xed;n del Pirineo"/>
+                <StringItem index="82" value="Mast&#xed;n espa&#xf1;ol"/>
+                <StringItem index="83" value="Mast&#xed;n ingl&#xe9;s"/>
+                <StringItem index="84" value="Mast&#xed;n napolitano"/>
+                <StringItem index="85" value="Mast&#xed;n tibetano"/>
+                <StringItem index="86" value="Mucuchies"/>
+                <StringItem index="87" value="Ovejero magall&#xe1;nico"/>
+                <StringItem index="88" value="Pastor alem&#xe1;n"/>
+                <StringItem index="89" value="Pastor belga"/>
+                <StringItem index="90" value="Pastor blanco suizo"/>
+                <StringItem index="91" value="Pastor catal&#xe1;n"/>
+                <StringItem index="92" value="Pastor croata"/>
+                <StringItem index="93" value="Pastor de los Pirineos"/>
+                <StringItem index="94" value="Pastor garafiano"/>
+                <StringItem index="95" value="Pastor holand&#xe9;s"/>
+                <StringItem index="96" value="Pastor leon&#xe9;s"/>
+                <StringItem index="97" value="Pastor mallorqu&#xed;n"/>
+                <StringItem index="98" value="Pastor peruano Chiribaya"/>
+                <StringItem index="99" value="Pastor vasco"/>
+                <StringItem index="100" value="Pekin&#xe9;s"/>
+                <StringItem index="101" value="Pembroke Welsh Corgi"/>
+                <StringItem index="102" value="Peque&#xf1;o Lebrel Italiano"/>
+                <StringItem index="103" value="Perdiguero franc&#xe9;s"/>
+                <StringItem index="104" value="Perdiguero portugu&#xe9;s"/>
+                <StringItem index="105" value="Perro cimarr&#xf3;n uruguayo"/>
+                <StringItem index="106" value="Perro de agua americano"/>
+                <StringItem index="107" value="Perro de agua espa&#xf1;ol"/>
+                <StringItem index="108" value="Perro de agua irland&#xe9;s"/>
+                <StringItem index="109" value="Perro de agua portugu&#xe9;s"/>
+                <StringItem index="110" value="Perro de Monta&#xf1;a de los Pirineos"/>
+                <StringItem index="111" value="Perro dogo mallorqu&#xed;n"/>
+                <StringItem index="112" value="Perro esquimal canadiense"/>
+                <StringItem index="113" value="Perro pastor de las islas Shetland"/>
+                <StringItem index="114" value="Perro peruano sin pelo"/>
+                <StringItem index="115" value="Phal&#xe8;ne"/>
+                <StringItem index="116" value="Pinscher alem&#xe1;n"/>
+                <StringItem index="117" value="Pinscher miniatura"/>
+                <StringItem index="118" value="Pitbull"/>
+                <StringItem index="119" value="Podenco canario"/>
+                <StringItem index="120" value="Podenco ibicenco"/>
+                <StringItem index="121" value="Podenco portugu&#xe9;s"/>
+                <StringItem index="122" value="Pointer"/>
+                <StringItem index="123" value="Pomerania"/>
+                <StringItem index="124" value="Presa canario"/>
+                <StringItem index="125" value="Pug"/>
+                <StringItem index="126" value="Puli"/>
+                <StringItem index="127" value="Rafeiro do Alentejo"/>
+                <StringItem index="128" value="Ratonero bodeguero andaluz"/>
+                <StringItem index="129" value="Ratonero mallorqu&#xed;n"/>
+                <StringItem index="130" value="Ratonero valenciano"/>
+                <StringItem index="131" value="Rhodesian Ridgeback"/>
+                <StringItem index="132" value="Rottweiler"/>
+                <StringItem index="133" value="Saluki"/>
+                <StringItem index="134" value="Samoyedo"/>
+                <StringItem index="135" value="San Bernardo"/>
+                <StringItem index="136" value="Sato"/>
+                <StringItem index="137" value="Schnauzer est&#xe1;ndar"/>
+                <StringItem index="138" value="Schnauzer gigante"/>
+                <StringItem index="139" value="Schnauzer miniatura"/>
+                <StringItem index="140" value="Setter ingl&#xe9;s"/>
+                <StringItem index="141" value="Setter irland&#xe9;s"/>
+                <StringItem index="142" value="Shar Pei"/>
+                <StringItem index="143" value="Shiba Inu"/>
+                <StringItem index="144" value="Shih Tzu"/>
+                <StringItem index="145" value="Siberian husky"/>
+                <StringItem index="146" value="Skye terrier"/>
+                <StringItem index="147" value="Sussex spaniel"/>
+                <StringItem index="148" value="Terranova"/>
+                <StringItem index="149" value="Terrier alem&#xe1;n"/>
+                <StringItem index="150" value="Terrier australiano"/>
+                <StringItem index="151" value="Terrier brasile&#xf1;o"/>
+                <StringItem index="152" value="Terrier chileno"/>
+                <StringItem index="153" value="Terrier escoc&#xe9;s"/>
+                <StringItem index="154" value="Terrier gal&#xe9;s"/>
+                <StringItem index="155" value="Terrier irland&#xe9;s"/>
+                <StringItem index="156" value="Weimaraner"/>
+                <StringItem index="157" value="West Highland White Terrier"/>
+                <StringItem index="158" value="Whippet"/>
+                <StringItem index="159" value="Xoloitzcuintle"/>
+                <StringItem index="160" value="Yorkshire terrier"/>
+                <StringItem index="161" value=" "/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="comboPerro3"/>
+          </AccessibilityProperties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelRazaPerro2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Copperplate Gothic Bold" size="18" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="perro raza 2"/>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="LblRazaPerro2"/>
+          </AccessibilityProperties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelRazaPerro1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Copperplate Gothic Bold" size="18" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="perro Raza 1"/>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="LblRazaPerro1"/>
+          </AccessibilityProperties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelRazaPerro3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Copperplate Gothic Bold" size="18" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="perro raza 3"/>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="lblRazaPerro3"/>
+          </AccessibilityProperties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelRazaGato3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Copperplate Gothic Bold" size="18" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="gato raza 3"/>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="LblRazaGato3"/>
+          </AccessibilityProperties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="comboRaza1Gato">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="59">
+                <StringItem index="0" value="Abisinio"/>
+                <StringItem index="1" value="Africano dom&#xe9;stico"/>
+                <StringItem index="2" value="American Curl"/>
+                <StringItem index="3" value="American shorthair"/>
+                <StringItem index="4" value="American wirehair"/>
+                <StringItem index="5" value="Angora turco"/>
+                <StringItem index="6" value="Aphrodite-s Giants"/>
+                <StringItem index="7" value="Australian Mist"/>
+                <StringItem index="8" value="Azul ruso"/>
+                <StringItem index="9" value="Bengala"/>
+                <StringItem index="10" value="Bobtail japon&#xe9;s"/>
+                <StringItem index="11" value="Bombay"/>
+                <StringItem index="12" value="Bosque de Noruega"/>
+                <StringItem index="13" value="Brazilian Shorthair"/>
+                <StringItem index="14" value="British Shorthair"/>
+                <StringItem index="15" value="Burm&#xe9;s"/>
+                <StringItem index="16" value="Burmilla"/>
+                <StringItem index="17" value="California Spangled"/>
+                <StringItem index="18" value="Ceylon"/>
+                <StringItem index="19" value="Chartreux"/>
+                <StringItem index="20" value="Cornish rex"/>
+                <StringItem index="21" value="Cymric"/>
+                <StringItem index="22" value="Deutsch Langhaar"/>
+                <StringItem index="23" value="Devon rex"/>
+                <StringItem index="24" value="Don Sphynx"/>
+                <StringItem index="25" value="Dorado africano"/>
+                <StringItem index="26" value="Europeo com&#xfa;n"/>
+                <StringItem index="27" value="Gato ex&#xf3;tico"/>
+                <StringItem index="28" value="German Rex"/>
+                <StringItem index="29" value="Habana brown"/>
+                <StringItem index="30" value="Himalayo"/>
+                <StringItem index="31" value="Khao Manee"/>
+                <StringItem index="32" value="Korat"/>
+                <StringItem index="33" value="Maine Coon"/>
+                <StringItem index="34" value="Manx"/>
+                <StringItem index="35" value="Mau egipcio"/>
+                <StringItem index="36" value="Munchkin"/>
+                <StringItem index="37" value="Ocicat"/>
+                <StringItem index="38" value="Ojos azules"/>
+                <StringItem index="39" value="Oriental"/>
+                <StringItem index="40" value="Oriental de pelo largo"/>
+                <StringItem index="41" value="Persa"/>
+                <StringItem index="42" value="Peterbald"/>
+                <StringItem index="43" value="Pixi Bob"/>
+                <StringItem index="44" value="Ragdoll"/>
+                <StringItem index="45" value="Sagrado de Birmania"/>
+                <StringItem index="46" value="Scottish Fold"/>
+                <StringItem index="47" value="Selkirk rex"/>
+                <StringItem index="48" value="Serengeti"/>
+                <StringItem index="49" value="Seychellois"/>
+                <StringItem index="50" value="Siam&#xe9;s"/>
+                <StringItem index="51" value="Siam&#xe9;s Moderno"/>
+                <StringItem index="52" value="Siam&#xe9;s Tradicional"/>
+                <StringItem index="53" value="Siberiano"/>
+                <StringItem index="54" value="Snowshoe"/>
+                <StringItem index="55" value="Sphynx"/>
+                <StringItem index="56" value="Tonkin&#xe9;s"/>
+                <StringItem index="57" value="Van Turco"/>
+                <StringItem index="58" value=" "/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="ComboGato1"/>
+          </AccessibilityProperties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboRaza1GatoActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelRazaGato2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Copperplate Gothic Bold" size="18" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="gato raza 2"/>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="lblRazaGato2"/>
+          </AccessibilityProperties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="comboRaza2Gato">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="59">
+                <StringItem index="0" value="Abisinio"/>
+                <StringItem index="1" value="Africano dom&#xe9;stico"/>
+                <StringItem index="2" value="American Curl"/>
+                <StringItem index="3" value="American shorthair"/>
+                <StringItem index="4" value="American wirehair"/>
+                <StringItem index="5" value="Angora turco"/>
+                <StringItem index="6" value="Aphrodite-s Giants"/>
+                <StringItem index="7" value="Australian Mist"/>
+                <StringItem index="8" value="Azul ruso"/>
+                <StringItem index="9" value="Bengala"/>
+                <StringItem index="10" value="Bobtail japon&#xe9;s"/>
+                <StringItem index="11" value="Bombay"/>
+                <StringItem index="12" value="Bosque de Noruega"/>
+                <StringItem index="13" value="Brazilian Shorthair"/>
+                <StringItem index="14" value="British Shorthair"/>
+                <StringItem index="15" value="Burm&#xe9;s"/>
+                <StringItem index="16" value="Burmilla"/>
+                <StringItem index="17" value="California Spangled"/>
+                <StringItem index="18" value="Ceylon"/>
+                <StringItem index="19" value="Chartreux"/>
+                <StringItem index="20" value="Cornish rex"/>
+                <StringItem index="21" value="Cymric"/>
+                <StringItem index="22" value="Deutsch Langhaar"/>
+                <StringItem index="23" value="Devon rex"/>
+                <StringItem index="24" value="Don Sphynx"/>
+                <StringItem index="25" value="Dorado africano"/>
+                <StringItem index="26" value="Europeo com&#xfa;n"/>
+                <StringItem index="27" value="Gato ex&#xf3;tico"/>
+                <StringItem index="28" value="German Rex"/>
+                <StringItem index="29" value="Habana brown"/>
+                <StringItem index="30" value="Himalayo"/>
+                <StringItem index="31" value="Khao Manee"/>
+                <StringItem index="32" value="Korat"/>
+                <StringItem index="33" value="Maine Coon"/>
+                <StringItem index="34" value="Manx"/>
+                <StringItem index="35" value="Mau egipcio"/>
+                <StringItem index="36" value="Munchkin"/>
+                <StringItem index="37" value="Ocicat"/>
+                <StringItem index="38" value="Ojos azules"/>
+                <StringItem index="39" value="Oriental"/>
+                <StringItem index="40" value="Oriental de pelo largo"/>
+                <StringItem index="41" value="Persa"/>
+                <StringItem index="42" value="Peterbald"/>
+                <StringItem index="43" value="Pixi Bob"/>
+                <StringItem index="44" value="Ragdoll"/>
+                <StringItem index="45" value="Sagrado de Birmania"/>
+                <StringItem index="46" value="Scottish Fold"/>
+                <StringItem index="47" value="Selkirk rex"/>
+                <StringItem index="48" value="Serengeti"/>
+                <StringItem index="49" value="Seychellois"/>
+                <StringItem index="50" value="Siam&#xe9;s"/>
+                <StringItem index="51" value="Siam&#xe9;s Moderno"/>
+                <StringItem index="52" value="Siam&#xe9;s Tradicional"/>
+                <StringItem index="53" value="Siberiano"/>
+                <StringItem index="54" value="Snowshoe"/>
+                <StringItem index="55" value="Sphynx"/>
+                <StringItem index="56" value="Tonkin&#xe9;s"/>
+                <StringItem index="57" value="Van Turco"/>
+                <StringItem index="58" value=" "/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="ComboGato2"/>
+          </AccessibilityProperties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelRazaGato1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Copperplate Gothic Bold" size="18" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="gato raza1"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[106, 17]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[106, 17]"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="LblRazaGato1"/>
+          </AccessibilityProperties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="comboRaza3Gato">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="59">
+                <StringItem index="0" value="Abisinio"/>
+                <StringItem index="1" value="Africano dom&#xe9;stico"/>
+                <StringItem index="2" value="American Curl"/>
+                <StringItem index="3" value="American shorthair"/>
+                <StringItem index="4" value="American wirehair"/>
+                <StringItem index="5" value="Angora turco"/>
+                <StringItem index="6" value="Aphrodite-s Giants"/>
+                <StringItem index="7" value="Australian Mist"/>
+                <StringItem index="8" value="Azul ruso"/>
+                <StringItem index="9" value="Bengala"/>
+                <StringItem index="10" value="Bobtail japon&#xe9;s"/>
+                <StringItem index="11" value="Bombay"/>
+                <StringItem index="12" value="Bosque de Noruega"/>
+                <StringItem index="13" value="Brazilian Shorthair"/>
+                <StringItem index="14" value="British Shorthair"/>
+                <StringItem index="15" value="Burm&#xe9;s"/>
+                <StringItem index="16" value="Burmilla"/>
+                <StringItem index="17" value="California Spangled"/>
+                <StringItem index="18" value="Ceylon"/>
+                <StringItem index="19" value="Chartreux"/>
+                <StringItem index="20" value="Cornish rex"/>
+                <StringItem index="21" value="Cymric"/>
+                <StringItem index="22" value="Deutsch Langhaar"/>
+                <StringItem index="23" value="Devon rex"/>
+                <StringItem index="24" value="Don Sphynx"/>
+                <StringItem index="25" value="Dorado africano"/>
+                <StringItem index="26" value="Europeo com&#xfa;n"/>
+                <StringItem index="27" value="Gato ex&#xf3;tico"/>
+                <StringItem index="28" value="German Rex"/>
+                <StringItem index="29" value="Habana brown"/>
+                <StringItem index="30" value="Himalayo"/>
+                <StringItem index="31" value="Khao Manee"/>
+                <StringItem index="32" value="Korat"/>
+                <StringItem index="33" value="Maine Coon"/>
+                <StringItem index="34" value="Manx"/>
+                <StringItem index="35" value="Mau egipcio"/>
+                <StringItem index="36" value="Munchkin"/>
+                <StringItem index="37" value="Ocicat"/>
+                <StringItem index="38" value="Ojos azules"/>
+                <StringItem index="39" value="Oriental"/>
+                <StringItem index="40" value="Oriental de pelo largo"/>
+                <StringItem index="41" value="Persa"/>
+                <StringItem index="42" value="Peterbald"/>
+                <StringItem index="43" value="Pixi Bob"/>
+                <StringItem index="44" value="Ragdoll"/>
+                <StringItem index="45" value="Sagrado de Birmania"/>
+                <StringItem index="46" value="Scottish Fold"/>
+                <StringItem index="47" value="Selkirk rex"/>
+                <StringItem index="48" value="Serengeti"/>
+                <StringItem index="49" value="Seychellois"/>
+                <StringItem index="50" value="Siam&#xe9;s"/>
+                <StringItem index="51" value="Siam&#xe9;s Moderno"/>
+                <StringItem index="52" value="Siam&#xe9;s Tradicional"/>
+                <StringItem index="53" value="Siberiano"/>
+                <StringItem index="54" value="Snowshoe"/>
+                <StringItem index="55" value="Sphynx"/>
+                <StringItem index="56" value="Tonkin&#xe9;s"/>
+                <StringItem index="57" value="Van Turco"/>
+                <StringItem index="58" value=" "/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="ComboGato3"/>
+          </AccessibilityProperties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Tama&#xf1;o Grande"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[181, 31]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[181, 31]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jRadioButton3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Tama&#xf1;o Peque&#xf1;o"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[181, 31]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[181, 31]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jRadioButton4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Tama&#xf1;o Mediano"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="40" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Mascotas perdidas y encontradas"/>
+          </Properties>
+        </Component>
+        <Component class="java.awt.Label" name="label3">
+          <Properties>
+            <Property name="alignment" type="int" value="1"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="cc" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Bodoni MT Black" size="24" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="SELECCIONE LOS FILTROS PARA BUSCAR UNA MASCOTA"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="LblFiltros"/>
+          </AccessibilityProperties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton1">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="99" red="0" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Ingresar"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="BtnIngresar"/>
+          </AccessibilityProperties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton2">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="cc" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="33" red="33" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Buscar"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton3">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="99" red="0" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Registrarse"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="BtnRegistrarse"/>
+          </AccessibilityProperties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel8">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagenes/fotomascota1.jpg"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="jLabel8"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Foto1"/>
+          </AccessibilityProperties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelColor2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Copperplate Gothic Bold" size="18" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="COLOR 2"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[106, 17]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[106, 17]"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="lblColor2"/>
+          </AccessibilityProperties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelColor3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Copperplate Gothic Bold" size="18" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="COLOR 3"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[106, 17]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[106, 17]"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="lblColor3"/>
+          </AccessibilityProperties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelColor1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Copperplate Gothic Bold" size="18" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="COLOR 1"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[106, 17]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[106, 17]"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="lblColor1"/>
+          </AccessibilityProperties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="comboColor3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="43">
+                <StringItem index="0" value="Albaricoque"/>
+                <StringItem index="1" value="Albino"/>
+                <StringItem index="2" value="Amarillo"/>
+                <StringItem index="3" value="Arlequ&#xed;n"/>
+                <StringItem index="4" value="Ascob"/>
+                <StringItem index="5" value="Atigrado"/>
+                <StringItem index="6" value="Avellana"/>
+                <StringItem index="7" value="Azul"/>
+                <StringItem index="8" value="Azul gris&#xe1;ceo "/>
+                <StringItem index="9" value="Azul mirlo"/>
+                <StringItem index="10" value="Belton"/>
+                <StringItem index="11" value="Bleiz"/>
+                <StringItem index="12" value="Bronce"/>
+                <StringItem index="13" value="Caf&#xe9;"/>
+                <StringItem index="14" value="Caoba"/>
+                <StringItem index="15" value="Cervato"/>
+                <StringItem index="16" value="Cobre"/>
+                <StringItem index="17" value="Collar"/>
+                <StringItem index="18" value="Con anteojos"/>
+                <StringItem index="19" value="Cortado"/>
+                <StringItem index="20" value="Champa&#xf1;a"/>
+                <StringItem index="21" value="Chocolate"/>
+                <StringItem index="22" value="Encendido"/>
+                <StringItem index="23" value="Ensillado"/>
+                <StringItem index="24" value="Flameado"/>
+                <StringItem index="25" value="Fuego"/>
+                <StringItem index="26" value="Golondrino"/>
+                <StringItem index="27" value="Gris carbonado"/>
+                <StringItem index="28" value="H&#xed;gado"/>
+                <StringItem index="29" value="Isabela"/>
+                <StringItem index="30" value="Leonado"/>
+                <StringItem index="31" value="Lila"/>
+                <StringItem index="32" value="Manchado"/>
+                <StringItem index="33" value="Manteado"/>
+                <StringItem index="34" value="Marcado"/>
+                <StringItem index="35" value="Marcas de l&#xe1;piz"/>
+                <StringItem index="36" value="Marr&#xf3;n"/>
+                <StringItem index="37" value="M&#xe1;scara"/>
+                <StringItem index="38" value="Moteado"/>
+                <StringItem index="39" value="Naranja"/>
+                <StringItem index="40" value="Pardo"/>
+                <StringItem index="41" value="Particolor"/>
+                <StringItem index="42" value="Pincelado"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="comboColor2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="43">
+                <StringItem index="0" value="Albaricoque"/>
+                <StringItem index="1" value="Albino"/>
+                <StringItem index="2" value="Amarillo"/>
+                <StringItem index="3" value="Arlequ&#xed;n"/>
+                <StringItem index="4" value="Ascob"/>
+                <StringItem index="5" value="Atigrado"/>
+                <StringItem index="6" value="Avellana"/>
+                <StringItem index="7" value="Azul"/>
+                <StringItem index="8" value="Azul gris&#xe1;ceo "/>
+                <StringItem index="9" value="Azul mirlo"/>
+                <StringItem index="10" value="Belton"/>
+                <StringItem index="11" value="Bleiz"/>
+                <StringItem index="12" value="Bronce"/>
+                <StringItem index="13" value="Caf&#xe9;"/>
+                <StringItem index="14" value="Caoba"/>
+                <StringItem index="15" value="Cervato"/>
+                <StringItem index="16" value="Cobre"/>
+                <StringItem index="17" value="Collar"/>
+                <StringItem index="18" value="Con anteojos"/>
+                <StringItem index="19" value="Cortado"/>
+                <StringItem index="20" value="Champa&#xf1;a"/>
+                <StringItem index="21" value="Chocolate"/>
+                <StringItem index="22" value="Encendido"/>
+                <StringItem index="23" value="Ensillado"/>
+                <StringItem index="24" value="Flameado"/>
+                <StringItem index="25" value="Fuego"/>
+                <StringItem index="26" value="Golondrino"/>
+                <StringItem index="27" value="Gris carbonado"/>
+                <StringItem index="28" value="H&#xed;gado"/>
+                <StringItem index="29" value="Isabela"/>
+                <StringItem index="30" value="Leonado"/>
+                <StringItem index="31" value="Lila"/>
+                <StringItem index="32" value="Manchado"/>
+                <StringItem index="33" value="Manteado"/>
+                <StringItem index="34" value="Marcado"/>
+                <StringItem index="35" value="Marcas de l&#xe1;piz"/>
+                <StringItem index="36" value="Marr&#xf3;n"/>
+                <StringItem index="37" value="M&#xe1;scara"/>
+                <StringItem index="38" value="Moteado"/>
+                <StringItem index="39" value="Naranja"/>
+                <StringItem index="40" value="Pardo"/>
+                <StringItem index="41" value="Particolor"/>
+                <StringItem index="42" value="Pincelado"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="comboColor1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="43">
+                <StringItem index="0" value="Albaricoque"/>
+                <StringItem index="1" value="Albino"/>
+                <StringItem index="2" value="Amarillo"/>
+                <StringItem index="3" value="Arlequ&#xed;n"/>
+                <StringItem index="4" value="Ascob"/>
+                <StringItem index="5" value="Atigrado"/>
+                <StringItem index="6" value="Avellana"/>
+                <StringItem index="7" value="Azul"/>
+                <StringItem index="8" value="Azul gris&#xe1;ceo "/>
+                <StringItem index="9" value="Azul mirlo"/>
+                <StringItem index="10" value="Belton"/>
+                <StringItem index="11" value="Bleiz"/>
+                <StringItem index="12" value="Bronce"/>
+                <StringItem index="13" value="Caf&#xe9;"/>
+                <StringItem index="14" value="Caoba"/>
+                <StringItem index="15" value="Cervato"/>
+                <StringItem index="16" value="Cobre"/>
+                <StringItem index="17" value="Collar"/>
+                <StringItem index="18" value="Con anteojos"/>
+                <StringItem index="19" value="Cortado"/>
+                <StringItem index="20" value="Champa&#xf1;a"/>
+                <StringItem index="21" value="Chocolate"/>
+                <StringItem index="22" value="Encendido"/>
+                <StringItem index="23" value="Ensillado"/>
+                <StringItem index="24" value="Flameado"/>
+                <StringItem index="25" value="Fuego"/>
+                <StringItem index="26" value="Golondrino"/>
+                <StringItem index="27" value="Gris carbonado"/>
+                <StringItem index="28" value="H&#xed;gado"/>
+                <StringItem index="29" value="Isabela"/>
+                <StringItem index="30" value="Leonado"/>
+                <StringItem index="31" value="Lila"/>
+                <StringItem index="32" value="Manchado"/>
+                <StringItem index="33" value="Manteado"/>
+                <StringItem index="34" value="Marcado"/>
+                <StringItem index="35" value="Marcas de l&#xe1;piz"/>
+                <StringItem index="36" value="Marr&#xf3;n"/>
+                <StringItem index="37" value="M&#xe1;scara"/>
+                <StringItem index="38" value="Moteado"/>
+                <StringItem index="39" value="Naranja"/>
+                <StringItem index="40" value="Pardo"/>
+                <StringItem index="41" value="Particolor"/>
+                <StringItem index="42" value="Pincelado"/>
+              </StringArray>
+            </Property>
+            <Property name="editor" type="javax.swing.ComboBoxEditor" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="null"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboColor1ActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelFotoPatitas">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagenes/fotomascota2.jpg"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="jLabel12"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="lblFotoPatita"/>
+          </AccessibilityProperties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelUltimosPosts">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="36" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="99" red="cc" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Ultimas publicaciones"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+                <BevelBorder/>
+              </Border>
+            </Property>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="jLabelUltimosPost"/>
+          </AccessibilityProperties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton4">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="99" red="99" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Gill Sans Ultra Bold" size="24" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Publicar mascota"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton5">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="0" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Salir"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton6">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagenes/iconotwitter.jpg"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton7">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagenes/iconoface.png"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="panelPost1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="cc" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+            <MatteColorBorder bottom="10" left="10" right="10" top="10">
+              <Color PropertyName="color" blue="99" green="99" red="0" type="rgb"/>
+            </MatteColorBorder>
+          </Border>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[430, 2]"/>
+        </Property>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="panelPost1"/>
+      </AccessibilityProperties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel14" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                      <Component id="jLabel15" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jTextField2" pref="128" max="32767" attributes="0"/>
+                      <Component id="jTextField1" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="204" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel16" min="-2" pref="136" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
+                          <Component id="jLabel17" min="-2" pref="134" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jTextField3" min="-2" pref="208" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jTextField1" min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="jLabel14" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace pref="66" max="32767" attributes="0"/>
+                          <Component id="jLabel17" min="-2" pref="30" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jTextField2" alignment="1" min="-2" pref="39" max="-2" attributes="0"/>
+                              <Component id="jLabel15" min="-2" pref="39" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel16" min="-2" pref="142" max="-2" attributes="0"/>
+                      <Component id="jTextField3" min="-2" pref="62" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel14">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="16" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Nombre"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel15">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="16" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Me perdi el:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel16">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagenes/perrito1.jpg"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="jLabel16"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jTextField1"/>
+          </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="textFieldNombrePost1"/>
+          </AccessibilityProperties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jTextField2"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel17">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="16" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Descripcion"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jTextField3"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="panelPost2">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="cc" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+            <MatteColorBorder bottom="10" left="10" right="10" top="10">
+              <Color PropertyName="color" blue="99" green="99" red="0" type="rgb"/>
+            </MatteColorBorder>
+          </Border>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[430, 131]"/>
+        </Property>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="panelPost2"/>
+      </AccessibilityProperties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="453" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+    <Container class="javax.swing.JPanel" name="panelPost3">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="cc" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+            <MatteColorBorder bottom="10" left="10" right="10" top="10">
+              <Color PropertyName="color" blue="99" green="99" red="0" type="rgb"/>
+            </MatteColorBorder>
+          </Border>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[430, 2]"/>
+        </Property>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="panelPost3"/>
+      </AccessibilityProperties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="453" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+    <Container class="javax.swing.JPanel" name="panelPost4">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="cc" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+            <MatteColorBorder bottom="10" left="10" right="10" top="10">
+              <Color PropertyName="color" blue="99" green="99" red="0" type="rgb"/>
+            </MatteColorBorder>
+          </Border>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[430, 2]"/>
+        </Property>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="panelPost4"/>
+      </AccessibilityProperties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="453" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+  </SubComponents>
+</Form>
