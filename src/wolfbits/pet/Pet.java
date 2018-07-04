@@ -2,6 +2,7 @@ package wolfbits.pet;
 
 import java.util.ArrayList;
 import java.util.List;
+import wolfbits.post.Post;
 import wolfbits.user.User;
 
 public class Pet {
@@ -181,14 +182,14 @@ public class Pet {
         return "Nombre: " + this.name + " Tipo: " + this.type + " Colores: " + this.colour1.getName() + " , " + this.colour2.getName() + " Edad: " + this.age + " Tamaño: " + this.size + " Color de ojos: " + this.eyeColour + " Sexo: " + this.gender + " Localización: " + this.localization + "Raza: " + this.race1.getName() + this.race2.getName();
     }
 
-    public void calculatePercentageOfMatching(Pet pet) {
+    public void calculatePercentageOfMatching(Post post) {
         int counterOfMatching = 0;
         int counterOfAttributes = 0;
        
-        if (this.type.equals(pet.getType())) {
+        if (this.type.equals(post.getPet().getType())) {
             if (this.race1 != null)
             {
-                if (this.race1.equals(pet.getRace1()))
+                if (this.race1.equals(post.getPet().getRace1()))
                 {
                     counterOfMatching += 1;
                 }
@@ -196,7 +197,7 @@ public class Pet {
             }
             if (this.colour1 != null)
             {
-                if (this.colour1.equals(pet.getColour1())) 
+                if (this.colour1.equals(post.getPet().getColour1())) 
                 {
                     counterOfMatching += 1;
                 }
@@ -204,7 +205,7 @@ public class Pet {
             }
             if (this.race2 != null)
             {
-                if (this.race2.equals(pet.getRace2()))
+                if (this.race2.equals(post.getPet().getRace2()))
                 {
                     counterOfMatching += 1;
                 }
@@ -212,7 +213,7 @@ public class Pet {
             }
             if (this.colour2 != null)
             {
-                if (this.colour2.equals(pet.getColour2())) 
+                if (this.colour2.equals(post.getPet().getColour2())) 
                 {
                     counterOfMatching += 1;
                 }
@@ -220,7 +221,7 @@ public class Pet {
             }
             if (!this.size.equals(" "))
             {
-                if (this.size.equals(pet.getSize()))
+                if (this.size.equals(post.getPet().getSize()))
                 {
                     counterOfMatching += 1;
                 }
@@ -228,7 +229,7 @@ public class Pet {
             }
             if (!this.age.equals(" "))
             {
-                if (this.age.equals(pet.getAge())) 
+                if (this.age.equals(post.getPet().getAge())) 
                 {
                     counterOfMatching += 1;
                 }
@@ -236,7 +237,7 @@ public class Pet {
             }
             if (!this.eyeColour.equals(" "))
             {
-                if (this.eyeColour.equals(pet.getEyeColour())) 
+                if (this.eyeColour.equals(post.getPet().getEyeColour())) 
                 {
                     counterOfMatching += 1;
                 }
@@ -244,7 +245,7 @@ public class Pet {
             }
             if (!this.gender.equals(" "))
             {
-                if (this.gender.equals(pet.getGender())) 
+                if (this.gender.equals(post.getPet().getGender())) 
                 {
                     counterOfMatching += 1;
                 }
@@ -252,7 +253,7 @@ public class Pet {
             }
             if (!this.hairType.equals(" "))
             {
-                if (this.hairType.equals(pet.getHairType())) 
+                if (this.hairType.equals(post.getPet().getHairType())) 
                 {
                     counterOfMatching += 1;
                 }
@@ -260,7 +261,7 @@ public class Pet {
             }
             if (!this.localization.equals(" "))
             {
-                if (this.localization.equals(pet.getLocalization())) 
+                if (this.localization.equals(post.getPet().getLocalization())) 
                 {
                     counterOfMatching += 1;
                 }
@@ -277,17 +278,17 @@ public class Pet {
         {
             this.percentageOfMatching = 0;
         }
-        pet.setPercentageOfMatching(percentageOfMatching);
+        post.setPercentageOfMatching(percentageOfMatching);
     }
 
-    public void calculateMatches(List<Pet> pets) {
-        List<Pet> results = new ArrayList<>();
+    public void calculateMatches(List<Post> posts) {
+        List<Post> results = new ArrayList<>();
 
-        for (Pet pet : pets) {
-            if (pet != this) 
+        for (Post post : posts) {
+            if (post != this) 
             {
-              this.calculatePercentageOfMatching(pet);
-                results.add(pet);
+              this.calculatePercentageOfMatching(post);
+                results.add(post);
             }
         }
 
@@ -311,10 +312,10 @@ public class Pet {
             }
         }
 
-        for (Pet result : results) {
+        for (Post result : results) {
             if (result.getPercentageOfMatching() != 0) 
             {
-                System.out.println(result.toString() + result.getPercentageOfMatching() + " % de coincidencia");
+                System.out.println(result.getPet().toString() + result.getPercentageOfMatching() + " % de coincidencia");
             }
         }
     }

@@ -141,11 +141,11 @@ public class FilterManager {
          int counter = 0;
       
       this.orFilterResults = new ArrayList<>();
-      for (Post pet: this.filterByTypeResults)
+      for (Post post: this.filterByTypeResults)
       {
           if (this.orFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender.filter(post))
           {
-          this.orFilterResults.add(pet);
+          this.orFilterResults.add(post);
           counter += 1;
           }
       }
@@ -158,7 +158,7 @@ public class FilterManager {
       }
   }
     
-    public void andFilter (List <Pet> pets)
+    public void andFilter (List <Post> posts)
     {
        int counter = 0;
        this.andFilterResults = new ArrayList<>();
