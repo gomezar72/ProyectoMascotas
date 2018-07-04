@@ -2,7 +2,6 @@ package wolfbits.pet;
 
 import java.util.ArrayList;
 import java.util.List;
-import wolfbits.post.Post;
 import wolfbits.user.User;
 
 public class Pet {
@@ -25,7 +24,7 @@ public class Pet {
     private String localization = " "; //localización, barrio o calles por el que fue visto en el caso en que sea perdido, o en el caso de encontrado barrio o calles en que vive
     private User keeper = null; // cuidador cuando es encontrado
     private User owner = null; // el dueño real cuando es perdido
-    private float percentageOfMatching = 0;
+    //private float percentageOfMatching = 0;
 
     public Pet() {
 
@@ -169,20 +168,20 @@ public class Pet {
         return localization;
     }
     
-    public void setPercentageOfMatching(float percentageOfMatching) {
+    /*public void setPercentageOfMatching(float percentageOfMatching) {
         this.percentageOfMatching = percentageOfMatching;
     }
 
     public float getPercentageOfMatching() {
         return percentageOfMatching ;
-    }
+    }*/
     
      @Override
     public String toString() {
         return "Nombre: " + this.name + " Tipo: " + this.type + " Colores: " + this.colour1.getName() + " , " + this.colour2.getName() + " Edad: " + this.age + " Tamaño: " + this.size + " Color de ojos: " + this.eyeColour + " Sexo: " + this.gender + " Localización: " + this.localization + "Raza: " + this.race1.getName() + this.race2.getName();
     }
 
-    public void calculatePercentageOfMatching(Post post) {
+   /* public void calculatePercentageOfMatching(Post post) {
         int counterOfMatching = 0;
         int counterOfAttributes = 0;
        
@@ -318,7 +317,7 @@ public class Pet {
                 System.out.println(result.getPet().toString() + result.getPercentageOfMatching() + " % de coincidencia");
             }
         }
-    }
+    }*/
 }
 
 //contructores:mandatorios: razas, tipoAnimal,colores,sexo, tamaño,
