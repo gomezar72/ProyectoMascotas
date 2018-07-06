@@ -5,6 +5,7 @@ import wolfbits.pet.*;
 import wolfbits.user.*;
 import java.util.ArrayList;
 import java.util.List;
+import wolfbits.post.Post;
 
 public class main {
 
@@ -14,8 +15,7 @@ public class main {
        User ana = new User();
        User maria = new User();
        User lalo = new User();
-       Post p1 = new Post(cat1,pepe,6/7/2018,);
-       
+             
        Race labrador = new Race("labrador", "raza mediana", "perro");
        Race collie = new Race("collie", "raza mediana", "perro");
        Race siames = new Race("siames", " ", "gato");
@@ -50,7 +50,7 @@ public class main {
        Pet dog11= new Pet(" ", "amarillo", "hembra", "pelo largo", negro, colorVacio,carlos, "perro", "", "chico","cachorro", mezcla, razaVacia,"villa laza", null);
        Pet dog12 = new Pet(" ", "gris", "hembra", " ", negro, colorVacio, ana, "perro", "  ", "grande","joven", mezcla, razaVacia, "centro", null);
        
-       
+       Post p1 = new Post(cat1,pepe,6/7/2018,"perdido","active", 21/7/2018); 
        
        List <Pet> pets = new ArrayList<>();
        pets.add(cat1);
