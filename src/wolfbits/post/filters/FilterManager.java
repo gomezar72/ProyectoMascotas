@@ -4,7 +4,6 @@ package wolfbits.post.filters;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
-import wolfbits.pet.Pet;
 import wolfbits.post.Post;
 
 public class FilterManager {
@@ -41,12 +40,8 @@ public class FilterManager {
        private AndFilter andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationAndHairType;
        private AndFilter andFilterByRace1Race2Colour1Colour2AgeEyeColourSizeLocalizationHairTypeAndGender;
        
-    public FilterManager ()
-  {
-      
-  }
-    
-    public FilterManager (List <Pet> pets)
+       
+    public FilterManager (List <Post> posts)
     {
         System.out.println ("Ingrese tipo: ");
         Scanner typesc = new Scanner(System.in);
@@ -131,7 +126,7 @@ public class FilterManager {
            
       for (Post result : this.filterByTypeResults )
       {
-         System.out.println(result.toString());
+         System.out.println(result.getPet().toString());
     }
       
     }
@@ -154,7 +149,7 @@ public class FilterManager {
            
       for (Post result : orFilterResults)
       {
-         System.out.println(result.toString());
+         System.out.println(result.getPet().toString());
       }
   }
     
@@ -176,8 +171,8 @@ public class FilterManager {
            
       for (Post result : this.andFilterResults)
       {
-         System.out.println(result.toString());
-    }
+         System.out.println(result.getPet().toString());
+      }
   }
     
     public List<Post> getOrResults()

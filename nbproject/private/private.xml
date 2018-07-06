@@ -17,21 +17,9 @@
             <file>file:/C:/git_repo/ProyectoMascotas/src/wolfbits/interfaces/user/login/Ejemplo.java</file>
         </group>
         <group>
-            <file>file:/E:/MASCOTAS%20GIT/ProyectoMascotas/src/wolfbits/post/filters/FilterByAge.java</file>
-            <file>file:/E:/MASCOTAS%20GIT/ProyectoMascotas/src/wolfbits/post/filters/FilterBySize.java</file>
-            <file>file:/E:/MASCOTAS%20GIT/ProyectoMascotas/src/wolfbits/post/filters/FilterByLocalization.java</file>
-            <file>file:/E:/MASCOTAS%20GIT/ProyectoMascotas/src/wolfbits/post/filters/FilterByColour2.java</file>
-            <file>file:/E:/MASCOTAS%20GIT/ProyectoMascotas/src/wolfbits/post/filters/FilterByRace2.java</file>
             <file>file:/E:/MASCOTAS%20GIT/ProyectoMascotas/src/wolfbits/post/filters/FilterManager.java</file>
-            <file>file:/E:/MASCOTAS%20GIT/ProyectoMascotas/src/wolfbits/post/filters/FilterByHairType.java</file>
             <file>file:/E:/MASCOTAS%20GIT/ProyectoMascotas/src/wolfbits/pet/Pet.java</file>
-            <file>file:/E:/MASCOTAS%20GIT/ProyectoMascotas/src/wolfbits/post/filters/FilterByEyeColour.java</file>
             <file>file:/E:/MASCOTAS%20GIT/ProyectoMascotas/src/wolfbits/post/Post.java</file>
-            <file>file:/E:/MASCOTAS%20GIT/ProyectoMascotas/src/wolfbits/post/filters/OrFilter.java</file>
-            <file>file:/E:/MASCOTAS%20GIT/ProyectoMascotas/src/wolfbits/post/filters/FilterByRace1.java</file>
-            <file>file:/E:/MASCOTAS%20GIT/ProyectoMascotas/src/wolfbits/post/filters/FilterByType.java</file>
-            <file>file:/E:/MASCOTAS%20GIT/ProyectoMascotas/src/wolfbits/post/filters/FilterByColour1.java</file>
-            <file>file:/E:/MASCOTAS%20GIT/ProyectoMascotas/src/wolfbits/post/filters/FilterByGender.java</file>
         </group>
     </open-files>
 </project-private>
