@@ -25,6 +25,7 @@ public class Post {
         this.pet = pet;
         this.startDate = startDate; //actual date
         this.endDate = endDate;//en 15 dias
+        this.type = type;
     }
 
     public User getUser() {

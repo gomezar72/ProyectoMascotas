@@ -14,6 +14,8 @@ public class main {
        User ana = new User();
        User maria = new User();
        User lalo = new User();
+       Post p1 = new Post(cat1,pepe,6/7/2018,);
+       
        Race labrador = new Race("labrador", "raza mediana", "perro");
        Race collie = new Race("collie", "raza mediana", "perro");
        Race siames = new Race("siames", " ", "gato");
